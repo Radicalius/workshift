@@ -1,0 +1,50 @@
+0	Mail Sort + Forward:T:23	Mail Sort + Forward:M:23	Mail Sort + Forward:S:23	
+1	Evening Sweep + Mop:F:10	CFS delivery putaway:F:14	Evening Sweep + Mop:W:15	Food Pickup:M:22	CO:S:14	CFS delivery putaway:T:21	Food Pickup:T:22	Food Pickup:Th:22	Snack: General:F:16	
+2	Mail Sort + Forward:S:23	Evening Sweep + Mop:M:10	Evening Sweep + Mop:Th:15	Pots - Afternoon:S:12	
+3	Free Pile Clean:F:21	Pots - Afternoon:S:12	
+4	Food Putaway:S:16	Food Putaway:F:20	Food Putaway:Su:20	After Dinner Kitchen + Dining Clean:S:20	After Dinner Kitchen + Dining Clean:Su:20	Food Putaway:T:21	CFS:Su:11	
+5	Mail Sort + Forward:W:23	Vacuum:W:23	Dishes - Morning:W:19	
+6	Food Putaway:Su:16	Mail Sort + Forward:W:23	Vacuum:F:23	
+7	Food Putaway:Su:21	After Dinner Kitchen + Dining Clean:M:20	Noah's Bagels (before 3pm):M:20	
+8	CFS delivery putaway:T:14	After Dinner Kitchen + Dining Clean:S:20	After Dinner Kitchen + Dining Clean:M:20	After Dinner Kitchen + Dining Clean:Th:20	Evening Sweep + Mop:Th:15	
+9	CO:Su:21	Bathroom - Second Floor:Th:11	CO:W:14	CO:T:14	Noah's Bagels (before 3pm):W:20	Mail Sort + Forward:S:23	CO:Su:14	Mail Sort + Forward:M:16	Bathroom - Second Floor:S:11	
+10	Vacuum:M:23	Nook + Shelf + Aquarium + Roof Clean:M:21	Vacuum:F:23	Vacuum:W:23	
+11	Food Putaway:T:16	Mail Sort + Forward:W:23	
+12	Vacuum:Th:23	Evening Sweep + Mop:M:15	
+13	Food Putaway:M:16	Dishes - Before Dinner:T:16	Food Putaway:W:20	
+14	Dishes - Morning:M:19	Dishes - Morning:Th:19	Food Putaway:Th:21	Food Putaway:T:21	
+15	Nook + Shelf + Aquarium + Roof Clean:Su:21	CFS:Th:11	Dishes - Morning:M:19	
+16	*IKC Manager:Su:19	Dishes - Early Afternoon:S:23	Dishes - Morning:S:19	
+17	Pots - Morning:Th:14	Living and Study Room Clean:Th:17	
+18	Snack: General:T:16	CFS delivery putaway:Su:21	Dishes - Morning:F:22	CFS delivery putaway:Th:14	Mail Sort + Forward:T:23	Evening Sweep + Mop:W:15	Mail Sort + Forward:W:16	CFS delivery putaway:Su:14	
+19	CFS delivery putaway:S:21	Mail Sort + Forward:T:23	*IKC Manager:M:17	Pots - Morning:Su:14	
+20	Dishes - Before Dinner:Su:16	Dishes - Before Dinner:Th:16	Food Pickup:T:14	Food Pickup:Th:14	
+21	Living and Study Room Clean:Su:20	Living and Study Room Clean:M:20	CFS delivery putaway:S:21	Pots - Morning:Su:14	Living and Study Room Clean:S:21	Pots - Morning:Th:10	IKC:T:23	*Health Worker Coordinator:W:23	CFS delivery putaway:Su:14	
+22	Evening Sweep + Mop:M:10	Dishes - Morning:F:12	Dishes - Morning:T:19	Evening Sweep + Mop:Su:15	
+23	Vacuum:M:23	Food Pickup:Su:14	IKC:Su:17	Nook + Shelf + Aquarium + Roof Clean:Su:23	Food Putaway:M:21	
+24	CFS delivery putaway:T:21	CFS delivery putaway:M:21	Free Pile Clean:W:21	Pots - Afternoon:Th:12	
+25	Dishes - Morning:S:19	CFS delivery putaway:M:14	Dishes - Early Afternoon:F:23	CFS delivery putaway:T:14	
+26	Food Pickup:Su:14	Food Pickup:Th:14	CFS delivery putaway:M:21	
+27	*IKC Manager:M:19	Food Putaway:Th:21	Mail Sort + Forward:Su:16	After Dinner Kitchen + Dining Clean:S:20	After Dinner Kitchen + Dining Clean:Th:20	
+28	CFS delivery putaway:F:14	Mail Sort + Forward:M:16	Food Pickup:T:14	
+29	IKC:W:22	Food Putaway:F:20	Pots - Morning:Th:14	Pots - Morning:F:10	Pots - Morning:S:10	
+30	Food Putaway:Su:20	Acme Bread (at 6pm):Th:19	Food Pickup:S:14	
+31	Perimeter and Roof Clean:W:10	Perimeter and Roof Clean:T:10	Perimeter and Roof Clean:M:10	Perimeter and Roof Clean:S:10	Pots - Morning:S:10	Pots - Morning:W:10	Acme Bread (at 6pm):T:19	After Dinner Kitchen + Dining Clean:M:20	
+32	Food Putaway:M:21	Food Putaway:F:20	CFS:Su:11	After Dinner Kitchen + Dining Clean:Th:20	Bathroom - Third Floor:M:23	Bathroom - Third Floor:Th:23	Acme Bread (at 6pm):T:19	Mail Sort + Forward:M:23	Dishes - Before Dinner:T:16	
+33	Living and Study Room Clean:W:21	Living and Study Room Clean:T:21	Evening Sweep + Mop:Su:15	Food Pickup:S:14	
+34	*IKC Manager:Su:17	*IKC Manager:F:19	
+35	IKC:F:17	CO:M:21	CFS delivery putaway:Su:21	Free Pile Clean:Su:21	Pots - Morning:F:10	Pots - Morning:S:10	After Dinner Kitchen + Dining Clean:T:20	CFS delivery putaway:Th:14	Food Putaway:Su:21	Food Putaway:T:20	
+36	CFS delivery putaway:S:21	Pots - Afternoon:Th:12	IKC:S:23	CFS delivery putaway:Su:21	*Health Worker Coordinator:S:23	
+37	CFS delivery putaway:T:21	CFS delivery putaway:M:21	Bathroom - Third Floor:Th:23	Acme Bread (at 6pm):T:19	
+38	Noah's Bagels (before 3pm):W:20	Bathroom - Third Floor:W:8	Bathroom - Third Floor:M:8	Dishes - Before Dinner:Th:16	Bathroom - Third Floor:Su:8	CO:S:14	CO:W:14	Bathroom - Second Floor:T:11	
+39	Acme Bread (at 6pm):Th:19	Noah's Bagels (before 3pm):M:20	IKC:M:23	Living and Study Room Clean:M:17	
+40	*Health Worker Coordinator:T:23	Evening Sweep + Mop:F:10	CFS delivery putaway:S:14	Evening Sweep + Mop:M:15	
+41	Food Putaway:Th:21	Food Putaway:M:21	Living and Study Room Clean:M:17	Dishes - Morning:F:19	
+42	Dishes - Early Afternoon:Th:23	Bathroom - Third Floor:Th:23	Vacuum:Th:23	Bathroom - Third Floor:T:23	Food Putaway:T:21	Food Putaway:Su:20	
+43	Pots - Morning:F:10	Pots - Morning:Su:10	CFS:Th:11	
+44	Dishes - Before Dinner:Su:16	Living and Study Room Clean:Su:20	Dishes - Before Dinner:T:14	Living and Study Room Clean:Th:17	
+45	Dishes - Early Afternoon:Su:23	Dishes - Before Dinner:Su:14	Dishes - Before Dinner:Su:12	After Dinner Kitchen + Dining Clean:W:20	
+46	Dishes - Early Afternoon:T:23	Dishes - Before Dinner:W:16	Dishes - Before Dinner:F:16	
+47	*IKC Manager:Th:19	*IKC Manager:S:19	Dishes - Morning:Th:12	
+48	Dishes - Before Dinner:S:14	CFS:Su:11	*Health Worker Coordinator:Th:21	Perimeter and Roof Clean:T:10	CFS delivery putaway:S:14	Living and Study Room Clean:Th:20	Perimeter and Roof Clean:S:10	
+49	Pots - Afternoon:M:12	Pots - Afternoon:S:12	Mail Sort + Forward:M:23	

@@ -1,0 +1,35 @@
+Bathroom - First Floor
+Bathroom - Second Floor
+Bathroom - Third Floor
+After Dinner Kitchen + Dining Clean
+Evening Sweep + Mop
+Free Pile Clean
+Living and Study Room Clean
+Mail Sort + Forward
+Morning/Afternoon Kitchen + Dining Clean
+Nook + Shelf + Aquarium + Roof Clean
+Perimeter and Roof Clean
+Vacuum
+CO
+CFS
+Dishes - Before Dinner
+Dishes - Early Afternoon
+Dishes - Evening
+Dishes - Morning
+Pots - Afternoon
+Pots - Evening
+Pots - Morning
+Co-Cook
+Snack: General
+Food Pickup
+Acme Bread (at 6pm)
+Noah's Bagels (before 3pm)
+Food Putaway
+CFS delivery putaway
+Earl's Delivery Putaway
+Leftovers Putaway
+IKC
+*Health Worker Coordinator
+*IKC Manager
+*Maintenance Monkey 2
+Pantry Gremlin

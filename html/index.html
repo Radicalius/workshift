@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<head>
+	<title> Sorting Hat | Kingman Workshift Assignment Program </title>
+	<script src=main.js></script>
+</head>
+<body>
+	<center>
+		<h1> Sorting Hat </h1>
+		<h3> Kingman Workshift Assignment Program </h3>
+	</center>
+	<hr/>
+	<h2> Configuration </h2>
+	<table>
+		<tr>
+			<td> Good Time Factor: </td>
+			<td> <input type=text size=10 value=1.5 id=gtf /></td>
+		</tr>
+		<tr>
+			<td> Bad Time Factor: </td>
+			<td> <input type=text size=10 value=0.5 id=btf /></td>
+		</tr>
+	</table>
+	<h2> Load from Files </h2>
+	<form>
+		<table>
+			<tr>
+				<td>People:</td>
+				<td><input type=file id=peopleFile /><br/></td>
+			</tr>
+			<tr>
+				<td>Shifts:</td>
+				<td><input type=file id=shiftsFile /></td>
+			</tr>
+			<tr>
+				<td align=right colspan=2>
+					<button type=button onclick='javascript:loadFromFile()' align=right > Load </button>
+				</td>
+			</tr>
+		</table>
+	</form>
+	<hr/>
+
+	<table style="width:100%">
+		<tr>
+			<td><h2>People</h2></td>
+			<td><h2>Workshifts</h2></td>
+		</tr>
+		<tr>
+			<td valign=top>
+				<div style="width:50%" id=people>
+					<table style="width:100%">
+						<tr>
+							<b><td>Name</td><td>Assigned Hours</td><td>Preferences</td><td>Schedule</td></b>
+						</tr>
+					</table>
+				</div>
+			</td>
+			<td valign=top>
+				<div style="width:50%" id=shifts></div>
+			</td>
+		</tr>
+	</table>
+	<center>
+		<button type=button id=go onclick="javascript:GO()"> GO!</button>
+	</center>
+	<hr/>
+	<h2> Log </h2>
+	<div id=log> No Jobs Yet </div>
+	<h2> Results </h2>
+	<a href=/res.csv download>Download Results (res.csv)</a><br/>
+	<div id=results></div>
+</body>

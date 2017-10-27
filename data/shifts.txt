@@ -1,0 +1,35 @@
+*Health Worker Coordinator,S|M|T,22,0.25,2
+Co-Cook,Th|Su,9,0.25,2
+Food Pickup,S|T,22,0.5,1
+Dishes - Morning,S|M|W|F,15,0.5,1
+Pots - Evening,S|Su|Th,11,2,2
+*Health Worker Coordinator,W|F|Su|S|T|Th,22,0.25,3
+Leftovers Putaway,W|Su|M|T|Th,22,1,2
+IKC,S|T|Th,20,0.5,1
+Pots - Evening,Th|T|Su,15,2,2
+After Dinner Kitchen + Dining Clean,S,13,0.25,1
+IKC,S|T,22,0.5,2
+*IKC Manager,T,20,2,2
+Leftovers Putaway,M|W|F,16,1,3
+Acme Bread (at 6pm),M|T|W|F,10,2,2
+Mail Sort + Forward,M,20,2,2
+Dishes - Morning,T,17,2,2
+Nook + Shelf + Aquarium + Roof Clean,S|M|Th,18,0.25,2
+Pots - Afternoon,Th|W|Su|T,16,0.25,3
+Pots - Morning,S|M|T|W|F,21,2,1
+Earl's Delivery Putaway,S|M|Th|F,15,2,3
+*IKC Manager,S|M|T|Th|F,10,0.5,2
+Mail Sort + Forward,S|M|Th|W|F,12,0.5,2
+Acme Bread (at 6pm),S|T|Th,9,2,2
+Dishes - Morning,T|Su|F,12,0.25,1
+Snack: General,W|S|T|Th|F,8,1,1
+*Health Worker Coordinator,Th|F,14,0.25,1
+Living and Study Room Clean,W|Th,16,0.5,3
+Mail Sort + Forward,M,23,0.25,2
+Earl's Delivery Putaway,S|M|T|Su|F,18,1,3
+Food Pickup,T|W|F,18,2,2
+Dishes - Before Dinner,M|F,19,0.5,3
+Mail Sort + Forward,S|M|Th,12,0.25,3
+CO,Th|F|M|Su|T|W,23,1,2
+*IKC Manager,S|M|Th,18,1,1
+Leftovers Putaway,S|M|Su|W|F,8,0.25,1
