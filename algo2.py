@@ -111,7 +111,7 @@ class Person(object):
 		self.name = cont[0].strip()
 		self.hours = int(cont[1].strip())
 		self.sched = ("\n".join(cont[2:9]))
-		self.pref = cont[9].strip()
+		self.pref = cont[9:]
 
 		# parse schedule data
 		days = self.sched.split("\n")
@@ -122,27 +122,30 @@ class Person(object):
 				hour+=1
 
 		# parse shift preference data
-		for ind,char in enumerate(self.pref):             # each charater references a shift type [1-5]
-			p = int(char)
-			self.pref_nums[shift_types[ind]] = p
+		for line in self.pref:
+			g = line.split(" = ")
+			if len(g) > 1:
+				self.pref_nums[g[0]] = int(g[1])
 
 	def time_pref(self, day, time):
 		# Takes a day in the format [M|T|W|Th|F] and a military hour btw 8 (8 am) and 23 (11:00pm)
 		# returns the preference of this person towards working at that time
 		# Return value is a decimal in [0, 0.5, 1, 1.5]
-		assert (day,time) in self.sched_nums, "time_pref: Invalid Day or Time: "+day+" "+str(time)
-		return self.sched_nums[(day, time)]
+		assert (day.strip(),time) in self.sched_nums, "time_pref: Invalid Day or Time: "+day+" "+str(time)
+		return self.sched_nums[(day.strip(),time)]
 
 	def shift_type_pref(self, shift_type):
 		# Takes the name of a type of shift as a string.
 		# returns a number [1-5] representing this person relative preference to this shift
-		assert shift_type in self.pref_nums, "shift_type_pref: Invalid Workshift Type"
-		return self.pref_nums[shift_type]
+		if shift_type in self.pref_nums:
+			return self.pref_nums[shift_type]
+		else:
+			return 3
 
 	def shift_pref(self, workshift):
 		# Given a workshift object determines this person's relative preference towards it.
 		# return value is a number in [0, 7.5] ie [1*0, 5*1.5]
-		tp = self.time_pref(workshift.day, workshift.time)       # time pref
+		tp = max([self.time_pref(workshift.day, hr) for hr in range(workshift.time, workshift.end_time)])       # time pref
 		wp = self.shift_type_pref(workshift.type)                # type pref
 		return tp * wp                                           # shift preference = (time pref)*(type pref)
 
@@ -209,12 +212,12 @@ class Shift(object):
 
 	blank = None
 
-	def __init__(self, type, day, time, hours):
+	def __init__(self, type, day, time,etime, hours):
 		self.type = type                                         # kind of workshift; should be in shift_types
-		assert self.type in shift_types, "Shift: Invalid Type: " + self.type
 		self.day = day                                           # day of the week ie [M|T|W|Th|F|S|Su]
-		self.time = time                                         # military time of the start of the workshift; should be between 8 (am) and 23 (11:00pm)
-		assert self.time >= 8 and self.time <= 23, "Shift: Invalid Time"
+		self.time = time                                         # military start time of the start of the workshift; should be between 8 (am) and 23 (11:00pm)
+		self.end_time = etime                                  # end time of workshift 
+		assert self.time >= 8 and self.time <= 23, "Shift: Invalid Time: " + str(self.time)
 		self.hours = hours                                       # Length of the shift in hours   
 
 	def __eq__(self, other):
@@ -245,13 +248,14 @@ class Shift(object):
 				sect = line.split(",")
 				type_ = sect[0]
 				days = sect[1].split("|")        # Create a seperate shift for each day
-				time = int(sect[2])
-				hrs = float(sect[3])
-				people_needed = int(sect[4])      # Create a seperate shift for each person needed
+				time = 8 if "*" in sect[2] else int(sect[2])
+				etime = 24 if "*" in sect[3] else int(sect[3])
+				hrs = float(sect[4])
+				people_needed = int(sect[5])      # Create a seperate shift for each person needed
 				for day in days:
 					for _ in range(people_needed):
-						shifts.append(Shift(type_, day, time, hrs))
-		Shift.blank = Shift("Vacuum", "T", 22, 0)
+						shifts.append(Shift(type_, day, time, etime, hrs))
+		Shift.blank = Shift("Vacuum", "T",22,23, 0)
 		return shifts
 
 # LOAD DATA #

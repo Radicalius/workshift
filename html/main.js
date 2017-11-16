@@ -43,9 +43,10 @@ function createForms(){
 	html = "<table style='width:50%'><tr><b><td>Name</td><td>Assigned Hours</td><td>Preferences</td><td>Schedule</td></b></tr>";
 	for (var i = 0; i < people.length; i++){
 		html+="<tr>"
-		for (var j = 0; j < 3; j++){
+		for (var j = 0; j < 2; j++){
 			html += "<td><input type=text size=10 id='person"+i+":"+j+"' value='" + people[i][j] + "' /></td>\n";
 		}
+		html += "<td><textarea rows=7 cols=16 id=person"+i+":2>"+people[i][2]+"</textarea></td>";
 		html += "<td><textarea rows=7 cols=16 id=person"+i+":3>"+people[i][3]+"</textarea></td>";
 		html += "<td><button type=button onclick='javascript:removePerson("+i+")'>Remove</button></td>";
 		html += "</tr>"
@@ -97,6 +98,7 @@ function updateValues(){
 			shifts[i][j] = document.getElementById("shift"+i+":"+j).value;
 		}
 	}
+	alert(shifts[0]);
 	for (var i = 0; i < people.length; i++){
 		for (var j = 0; j < 4; j++){
 			people[i][j] = document.getElementById("person"+i+":"+j).value;
@@ -119,6 +121,7 @@ function loadShifts(text){
 	for (var i = 0; i < lines.length; i++){
 		if (lines[i]!=""){
 			var cols = lines[i].split(",");
+			cols[5] = "1";
 			shifts.push(cols);
 		}
 	}
@@ -127,16 +130,21 @@ function loadShifts(text){
 
 function loadPeople(text){
 	people = [];
-	var lines = text.split("\n");
-	for (var i = 0; i < lines.length; i+=11){
-		if (lines[i]!=""){
+	var ent = text.split("[END]\n");
+	for (var i = 0; i < ent.length; i+=1){
+		var lines = ent[i].split("\n")
+		if (lines[0]!=""){
 			person = [];
-			person.push(lines[i]);
-			person.push(lines[i+1]);
-			person.push(lines[i+9]);
+			person.push(lines[0]);
+			person.push(lines[1]);
+			var pref="";
+			for (var k = 9; k < lines.length; k++){
+				pref += lines[k]+"\n";
+			}
+			person.push(pref);
 			var sched = "";
 			for (var j = 0; j < 7; j++){
-				sched+=lines[i+2+j]+"\n";
+				sched+=lines[2+j]+"\n";
 			}
 			person.push(sched);
 			people.push(person);
@@ -162,8 +170,8 @@ function loadResults(){
 	for (var i = 0; i < lines.length; i++){
 		html += "<tr>";
 		var cols = lines[i].split(",");
-		html += "<td>"+cols[0]+"</td>";
-		for (var j = 1; j+3 < cols.length; j+=3){
+		html += "<td>"+cols[0]+", "+cols[1]+"</td>";
+		for (var j = 2; j+3 < cols.length; j+=3){
 			if (j < cols.length){
 				html+="<td>"+cols[j]+" "+cols[j+1]+" "+cols[j+2]+"</td>";
 			}
@@ -191,7 +199,7 @@ function GO(){
 	updateValues();
 	var shiftfile = "";
 	for (var i = 0; i < shifts.length; i++){
-		for (var j = 0; j < 5; j++){
+		for (var j = 0; j < 6; j++){
 			shiftfile += shifts[i][j]+",";
 		}
 		shiftfile+="\n";
@@ -216,4 +224,8 @@ function GO(){
 		log.innerHTML += result;
 		loadResults();
 	});
+}
+
+function onSync() {
+
 }

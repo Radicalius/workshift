@@ -39,7 +39,7 @@ class SortingHatRequestHandler(BaseHTTPRequestHandler):
 		# self.path is the relative url requested
 
 		# check to see that the requested url is valid
-		if self.path in ["/", "/main.js","/res.csv"] or self.path.startswith("/query"):
+		if self.path in ["/", "/main.js","/res.csv","/shifts.csv","/people.txt"] or self.path.startswith("/query"):
 		
 			# Inform the client that the request was successful and we are sending HTML
 			self.send_response(200)
@@ -55,6 +55,17 @@ class SortingHatRequestHandler(BaseHTTPRequestHandler):
 
 				# send contents of /data/res.csv (a little hacky :))
 				self.send_page("../data/res.csv")
+
+			elif self.path == "/shifts.csv":
+
+				# send contents of /data/shifts.csv
+				self.send_page("../data/shifts.csv")
+
+			elif self.path == "/people.txt":
+
+				# send contents of /data/res.csv (a little hacky :))
+				self.send_page("../data/people.txt")
+
 
 			elif self.path.startswith("/query"):   # job request
 
