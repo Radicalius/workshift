@@ -26,7 +26,7 @@ for line in name_list.split("\n"):
 	if line.startswith("<OPTION>"):
 		names.append(line.replace("<OPTION>",""))
 
-shifts = open("shifts.csv","w")
+shifts = open("data/shifts.csv","w")
 
 shift_table = requests.get("https://workshift.bsc.coop/kng/admin/master_shifts.php",cookies=cookies).text
 table = shift_table.split("""<table id="bodytable" cellspacing='0'>\n<thead>""")[1].split("</tbody></table>")[0]
@@ -37,7 +37,7 @@ for entry in table.split("\n"):
 		line[0] = line[0].strip().replace("&#039;","")
 		shifts.write(", ".join([line[0],"|".join([days[i-2] for i in range(2,10) if line[i]!="XXXXX"]), convert_time(line[10]), convert_time(line[11]), line[1], "1"]) + "\n")
 
-people = open("people.txt","w")
+people = open("data/people.txt","w")
 
 for name in names:
 	print name

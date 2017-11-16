@@ -7,7 +7,7 @@
 #                              |___/
 #
 # Kingman Workshift Assignment Program
-# Version 1.0.0 Alpha
+# Version 1.0.0
 # Contact: mr.zacharycotton@gmail.com
 ################################################################################################################                  
 

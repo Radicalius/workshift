@@ -227,5 +227,9 @@ function GO(){
 }
 
 function onSync() {
-
+	var button = document.getElementById("sync")
+	button.innerHTML="Sync with BSC Server (Running)";
+	httpGetAsync("/sync", function(text) {
+		button.innerHTML = "Sync with BSC Server ("+text+")";
+	});
 }

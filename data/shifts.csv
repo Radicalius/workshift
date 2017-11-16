@@ -1,70 +1,70 @@
-*Board Rep, M|T|W|Th|F|S|Su, *, *, 5,1,
-*Co-Chicken Tender, M|T|W|Th|F|S|Su, *, *, 2,1,
-*Co-Chicken Tender, M|T|W|Th|F|S|Su, *, *, 2,1,
-*Garden Fairy 1, M|T|W|Th|F|S|Su, *, *, 3,1,
-*Garden Fairy 2, M|T|W|Th|F|S|Su, *, *, 2,1,
-*Health Worker, M|T|W|Th|F|S|Su, *, *, 3,1,
-*Health Worker Coordinator, M|T|W|Th|F|S|Su, *, *, 5,1,
-*House Manager, M|T|W|Th|F|S|Su, *, *, 5,1,
-*IKC Manager, M|T|W|Th|F|S|Su, *, *, 3,1,
-*IKC Manager, M|T|W|Th|F|S|Su, 20, 22, 3,1,
-*Kitchen Manager 1, M|T|W|Th|F|S|Su, *, *, 5,1,
-*Maintenance Monkey 1, M|T|W|Th|F|S|Su, *, *, 5,1,
-*Maintenance Monkey 2, M|T|W|Th|F|S|Su, *, *, 3,1,
-*N0twerk Manager, M|T|W|Th|F|S|Su, *, *, 3,1,
-*President, M|T|W|Th|F|S|Su, *, *, 5,1,
-*Social Manager 1, M|T|W|Th|F|S|Su, *, *, 3,1,
-*Social Manager 2, M|T|W|Th|F|S|Su, *, *, 3,1,
-*Vice President, M|T|W|Th|F|S|Su, 19, 21, 2,1,
-*Werkshit Manager, M|T|W|Th|F|S|Su, *, *, 5,1,
-*WRM, M|T|W|Th|F|S|Su, *, *, 2,1,
-*WRM, M|T|W|Th|F|S|Su, *, *, 2,1,
-Acme Bread (at 6pm), M|T|W|Th|F|S|Su, 17, 18, 1,1,
-After Dinner Kitchen + Dining Clean, T|W|F|Su, 20, 23, 1,1,
-Bathroom - Basement, M|T|W|Th|F|S|Su, *, *, 1.5,1,
-Bathroom - First Floor, M|T|W|Th|F|S|Su, 9, 23, 1,1,
-Bathroom - Second Floor, M|T|W|Th|F|S|Su, 9, 23, 2,1,
-Bathroom - Third Floor, M|T|W|Th|F|S|Su, 9, 23, 2,1,
-CFS, M|T|W|Th|F|S|Su, *, *, 3,1,
-CFS, T, *, *, 3,1,
-CFS, M|T|W|Th|F|S|Su, *, *, 5,1,
-CFS, M|T|W|Th|F|S|Su, *, *, 5,1,
-CFS, W, 10, 13, 2,1,
-CFS, Th, *, *, 3.5,1,
-CFS delivery putaway, T|W|Th|F, 12, 21, 0.5,1,
-Co-Cook, M|T|W|Th|F|Su, 16, 19, 3,1,
-Co-Cook, M|T|W|Th|F|Su, 16, 19, 3,1,
-Co-Cook, M|T|W|Th|F|Su, 16, 19, 3,1,
-Dishes - Before Dinner, M|T|W|Th|F|Su, 17, 19, 1,1,
-Dishes - Early Afternoon, M|T|W|Th|F|S|Su, 12, 16, 1,1,
-Dishes - Evening, M|T|W|Th|F|S|Su, 20, *, 1,1,
-Dishes - Morning, M|T|W|Th|F|S|Su, 8, 11, 1,1,
-Earls Delivery Putaway, M|Th, 9, 12, 0.5,1,
-Evening Sweep + Mop, T|W|Su, 19, 24, 1.5,1,
-Free Pile Clean, F, 9, 22, 1,1,
-Free Pile Clean, Su, 9, 22, 1.5,1,
-IKC, M|Th, 20, 22, 2,1,
-IKC, M, 20, 22, 1.5,1,
-IKC, M|Th, 20, 22, 2,1,
-IKC, M|Th, 20, 22, 2,1,
-IKC, M|Th, 20, 22, 2,1,
-IKC, M|Th, 20, 22, 2,1,
-IKC, M|Th, 20, 22, 2,1,
-IKC, M|Th, 20, 22, 1,1,
-IKC, M|Th, 20, 22, 2,1,
-IKC, M|Th, 20, 22, 2,1,
-Leftovers Putaway, M|T|W|F|Su, 20, 21, 0.5,1,
-Living and Study Room Clean, T|F, *, 21, 2,1,
-Mail Sort + Forward, M|T|W|Th|F|S|Su, *, *, 2,1,
-Morning/Afternoon Kitchen + Dining Clean, M|T|W|Th|F|S|Su, 10, 16, 1,1,
-Noahs Bagels (before 3pm), M|T|W|Th|F|S|Su, 14, 15, 1,1,
-Nook + Shelf + Aquarium + Roof Clean, M, *, *, 1,1,
-Perimeter and Roof Clean, M|T|W|Th|F|S|Su, *, 19, 2,1,
-Pots - Afternoon, Th, *, *, 1,1,
-Pots - Afternoon, M|T|W|F|S|Su, 12, 18, 2,1,
-Pots - Evening, T|W|Su, 20, *, 2,1,
-Pots - Evening, T|W|Su, 20, *, 2,1,
-Pots - Morning, M|T|Th|F|Su, 9, 12, 2,1,
-Pots - Morning, W|S, 9, 12, 1,1,
-Snack: General, M|T|W|Th|F|S|Su, *, *, 1.5,1,
-Vacuum, W|Su, *, 22, 2,1,
+*Board Rep, M|T|W|Th|F|S|Su, *, *, 5, 1
+*Co-Chicken Tender, M|T|W|Th|F|S|Su, *, *, 2, 1
+*Co-Chicken Tender, M|T|W|Th|F|S|Su, *, *, 2, 1
+*Garden Fairy 1, M|T|W|Th|F|S|Su, *, *, 3, 1
+*Garden Fairy 2, M|T|W|Th|F|S|Su, *, *, 2, 1
+*Health Worker, M|T|W|Th|F|S|Su, *, *, 3, 1
+*Health Worker Coordinator, M|T|W|Th|F|S|Su, *, *, 5, 1
+*House Manager, M|T|W|Th|F|S|Su, *, *, 5, 1
+*IKC Manager, M|T|W|Th|F|S|Su, *, *, 3, 1
+*IKC Manager, M|T|W|Th|F|S|Su, 20, 22, 3, 1
+*Kitchen Manager 1, M|T|W|Th|F|S|Su, *, *, 5, 1
+*Maintenance Monkey 1, M|T|W|Th|F|S|Su, *, *, 5, 1
+*Maintenance Monkey 2, M|T|W|Th|F|S|Su, *, *, 3, 1
+*N0twerk Manager, M|T|W|Th|F|S|Su, *, *, 3, 1
+*President, M|T|W|Th|F|S|Su, *, *, 5, 1
+*Social Manager 1, M|T|W|Th|F|S|Su, *, *, 3, 1
+*Social Manager 2, M|T|W|Th|F|S|Su, *, *, 3, 1
+*Vice President, M|T|W|Th|F|S|Su, 19, 21, 2, 1
+*Werkshit Manager, M|T|W|Th|F|S|Su, *, *, 5, 1
+*WRM, M|T|W|Th|F|S|Su, *, *, 2, 1
+*WRM, M|T|W|Th|F|S|Su, *, *, 2, 1
+Acme Bread (at 6pm), M|T|W|Th|F|S|Su, 17, 18, 1, 1
+After Dinner Kitchen + Dining Clean, T|W|F|Su, 20, 23, 1, 1
+Bathroom - Basement, M|T|W|Th|F|S|Su, *, *, 1.5, 1
+Bathroom - First Floor, M|T|W|Th|F|S|Su, 9, 23, 1, 1
+Bathroom - Second Floor, M|T|W|Th|F|S|Su, 9, 23, 2, 1
+Bathroom - Third Floor, M|T|W|Th|F|S|Su, 9, 23, 2, 1
+CFS, M|T|W|Th|F|S|Su, *, *, 3, 1
+CFS, T, *, *, 3, 1
+CFS, M|T|W|Th|F|S|Su, *, *, 5, 1
+CFS, M|T|W|Th|F|S|Su, *, *, 5, 1
+CFS, W, 10, 13, 2, 1
+CFS, Th, *, *, 3.5, 1
+CFS delivery putaway, T|W|Th|F, 24, 21, 0.5, 1
+Co-Cook, M|T|W|Th|F|Su, 16, 19, 3, 1
+Co-Cook, M|T|W|Th|F|Su, 16, 19, 3, 1
+Co-Cook, M|T|W|Th|F|Su, 16, 19, 3, 1
+Dishes - Before Dinner, M|T|W|Th|F|Su, 17, 19, 1, 1
+Dishes - Early Afternoon, M|T|W|Th|F|S|Su, 12, 16, 1, 1
+Dishes - Evening, M|T|W|Th|F|S|Su, 20, *, 1, 1
+Dishes - Morning, M|T|W|Th|F|S|Su, 8, 11, 1, 1
+Earls Delivery Putaway, M|Th, 9, 12, 0.5, 1
+Evening Sweep + Mop, T|W|Su, 19, 24, 1.5, 1
+Free Pile Clean, F, 9, 22, 1, 1
+Free Pile Clean, Su, 9, 22, 1.5, 1
+IKC, M|Th, 20, 22, 2, 1
+IKC, M|Th, 20, 22, 1.5, 1
+IKC, M|Th, 20, 22, 2, 1
+IKC, M|Th, 20, 22, 2, 1
+IKC, M|Th, 20, 22, 2, 1
+IKC, M|Th, 20, 22, 2, 1
+IKC, M|Th, 20, 22, 2, 1
+IKC, M|Th, 20, 22, 1, 1
+IKC, M|Th, 20, 22, 2, 1
+IKC, M|Th, 20, 22, 2, 1
+Leftovers Putaway, M|T|W|F|Su, 20, 21, 0.5, 1
+Living and Study Room Clean, T|F, *, 21, 2, 1
+Mail Sort + Forward, M|T|W|Th|F|S|Su, *, *, 2, 1
+Morning/Afternoon Kitchen + Dining Clean, M|T|W|Th|F|S|Su, 10, 16, 1, 1
+Noahs Bagels (before 3pm), M|T|W|Th|F|S|Su, 14, 15, 1, 1
+Nook + Shelf + Aquarium + Roof Clean, M, *, *, 1, 1
+Perimeter and Roof Clean, M|T|W|Th|F|S|Su, *, 19, 2, 1
+Pots - Afternoon, Th, *, *, 1, 1
+Pots - Afternoon, M|T|W|F|S|Su, 12, 18, 2, 1
+Pots - Evening, T|W|Su, 20, *, 2, 1
+Pots - Evening, T|W|Su, 20, *, 2, 1
+Pots - Morning, M|T|Th|F|Su, 9, 12, 2, 1
+Pots - Morning, W|S, 9, 12, 1, 1
+Snack: General, M|T|W|Th|F|S|Su, *, *, 1.5, 1
+Vacuum, W|Su, *, 22, 2, 1

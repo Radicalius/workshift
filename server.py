@@ -39,7 +39,7 @@ class SortingHatRequestHandler(BaseHTTPRequestHandler):
 		# self.path is the relative url requested
 
 		# check to see that the requested url is valid
-		if self.path in ["/", "/main.js","/res.csv","/shifts.csv","/people.txt"] or self.path.startswith("/query"):
+		if self.path in ["/", "/main.js","/res.csv","/shifts.csv","/people.txt","/sync"] or self.path.startswith("/query"):
 		
 			# Inform the client that the request was successful and we are sending HTML
 			self.send_response(200)
@@ -84,6 +84,12 @@ class SortingHatRequestHandler(BaseHTTPRequestHandler):
 				output = os.popen("python algo2.py").read()                         # connect and read the output from the algorithym
 				output = "<br/>"+output.replace("\n","<br/>")
 				self.wfile.write(output)                                            # then send to client
+
+			elif self.path.startswith("/sync"):                                     # user is requesting to grab preferences from bsc.coop
+
+				# run load_prefs script
+				os.system("python load_prefs.py")
+				self.wfile.write("Finished")
 
 			else:
 
