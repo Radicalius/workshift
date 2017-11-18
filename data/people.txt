@@ -11,6 +11,8 @@ IKC = 4
 Co-Cook = 5
 Co-Cook = 5
 Co-Cook = 5
+
+
 [END]
 Askew, Ryan
 5
@@ -29,6 +31,8 @@ Food = 2
 Food_Pickup = 3
 Food_Putaway = 5
 IKC = 1
+
+
 [END]
 Astvatsatrian, Nelli
 5
@@ -69,6 +73,8 @@ Pots - Morning = 1
 Pots - Morning = 1
 Snack: General = 1
 Vacuum = 4
+
+
 [END]
 Barad, Mia
 5
@@ -102,6 +108,8 @@ Nook + Shelf + Aquarium + Roof Clean = 4
 Perimeter and Roof Clean = 2
 Snack: General = 4
 Vacuum = 1
+
+
 [END]
 Berger-Cahn, Jonah
 5
@@ -112,6 +120,7 @@ Berger-Cahn, Jonah
 ++++++++++++++++
 ++++++++++++++++
 ++++++++++++++++
+
 [END]
 Bertrando, Ian
 5
@@ -127,6 +136,8 @@ CO = 3
 Dishroom = 3
 Food = 3
 IKC = 4
+
+
 [END]
 Brin, Sonia
 5
@@ -137,6 +148,7 @@ Brin, Sonia
 ++++++++++++++++
 ++++++++++++++++
 ++++++++++++++++
+
 [END]
 Brown, Emil
 5
@@ -147,6 +159,7 @@ Brown, Emil
                 
                 
                 
+
 [END]
 Bryon, Jacob
 5
@@ -176,6 +189,8 @@ Pots - Evening = 3
 Pots - Morning = 5
 Pots - Morning = 5
 Snack: General = 3
+
+
 [END]
 Cotton, Zachary
 5
@@ -206,6 +221,8 @@ Pots - Evening = 5
 Pots - Evening = 5
 Pots - Morning = 5
 Pots - Morning = 5
+
+
 [END]
 Cruz, Frankie
 5
@@ -266,6 +283,8 @@ Pots - Morning = 5
 Pots - Morning = 5
 Snack: General = 2
 Vacuum = 4
+
+
 [END]
 Curtin-Savala, Mateo
 5
@@ -317,6 +336,8 @@ Pots - Morning = 1
 Pots - Morning = 1
 Snack: General = 3
 Vacuum = 4
+
+
 [END]
 Ellis, Hannah
 5
@@ -327,6 +348,7 @@ Ellis, Hannah
 ++++++++++++++++
 ++++++++++++++++
 ++++++++++++++++
+
 [END]
 Farrell, Mathilda
 5
@@ -387,6 +409,8 @@ Pots - Morning = 1
 Pots - Morning = 1
 Snack: General = 5
 Vacuum = 1
+
+
 [END]
 Fudin, Genna
 5
@@ -397,6 +421,7 @@ Fudin, Genna
 ++++++++++++++++
 ++++++++++++++++
 ++++++++++++++++
+
 [END]
 Garrison, Grace
 5
@@ -447,6 +472,8 @@ Pots - Morning = 1
 Pots - Morning = 1
 Snack: General = 5
 Vacuum = 2
+
+
 [END]
 Georgiou, Tomas
 5
@@ -457,6 +484,7 @@ Georgiou, Tomas
 ++++++++++++++++
 ++++++++++++++++
 ++++++++++++++++
+
 [END]
 Getter, Daniel
 5
@@ -506,6 +534,8 @@ Pots - Morning = 1
 Pots - Morning = 1
 Snack: General = 3
 Vacuum = 5
+
+
 [END]
 Ghouas, Alvin
 5
@@ -521,6 +551,8 @@ CO = 1
 Dishroom = 4
 Food = 5
 IKC = 4
+
+
 [END]
 Gonzalez, Andrea
 5
@@ -547,6 +579,8 @@ IKC = 4
 Mail Sort + Forward = 5
 Noahs Bagels (before 3pm) = 4
 Vacuum = 4
+
+
 [END]
 Hendrickson, Brett
 5
@@ -603,6 +637,8 @@ Pots - Morning = 1
 Pots - Morning = 1
 Snack: General = 5
 Vacuum = 4
+
+
 [END]
 Hurd, Gregory
 5
@@ -621,6 +657,8 @@ Food = 3
 Food_Pickup = 5
 Food_Putaway = 3
 IKC = 3
+
+
 [END]
 Jipsen, Carli
 5
@@ -673,6 +711,8 @@ Pots - Morning = 1
 Pots - Morning = 1
 Snack: General = 5
 Vacuum = 2
+
+
 [END]
 Joaquin, Anthony
 5
@@ -691,6 +731,8 @@ Food = 5
 Food_Pickup = 3
 Food_Putaway = 5
 IKC = 4
+
+
 [END]
 Klein, Zoe
 5
@@ -751,6 +793,8 @@ Pots - Morning = 1
 Pots - Morning = 1
 Snack: General = 3
 Vacuum = 3
+
+
 [END]
 Levinson, Elizabeth
 5
@@ -761,6 +805,7 @@ Levinson, Elizabeth
 ++++++++++++++++
 ++++++++++++++++
 ++++++++++++++++
+
 [END]
 Linden, Audrey
 5
@@ -806,6 +851,8 @@ Pots - Morning = 1
 Pots - Morning = 1
 Snack: General = 5
 Vacuum = 1
+
+
 [END]
 Mahowald, Nathaniel
 5
@@ -824,6 +871,8 @@ Food = 5
 Food_Pickup = 3
 Food_Putaway = 2
 IKC = 4
+
+
 [END]
 Malave, Gabriella
 5
@@ -884,6 +933,8 @@ Pots - Morning = 1
 Pots - Morning = 1
 Snack: General = 5
 Vacuum = 4
+
+
 [END]
 Martin, Jasmine
 5
@@ -894,6 +945,7 @@ Martin, Jasmine
 ++++++++++++++++
 ++++++++++++++++
 ++++++++++++++++
+
 [END]
 Mayorga, Joel
 5
@@ -910,6 +962,8 @@ Dishroom = 2
 Food = 4
 IKC = 2
 CFS = 4
+
+
 [END]
 McConnell, Marisa
 5
@@ -920,6 +974,7 @@ McConnell, Marisa
 ++++++++++++++++
 ++++++++++++++++
 ++++++++++++++++
+
 [END]
 Milman, Rebecca
 5
@@ -966,6 +1021,8 @@ Pots - Morning = 1
 Pots - Morning = 1
 Snack: General = 5
 Vacuum = 3
+
+
 [END]
 Mizrahi, Nicole
 5
@@ -976,6 +1033,7 @@ xxxxxxxx
 xxxxxxxxx       
 ++++            
 ++++            
+
 [END]
 Nelson, Mariel
 5
@@ -998,6 +1056,8 @@ IKC = 5
 IKC = 5
 IKC = 5
 IKC = 5
+
+
 [END]
 Nicole, Meghan
 5
@@ -1039,6 +1099,8 @@ Pots - Evening = 1
 Pots - Morning = 1
 Pots - Morning = 1
 Vacuum = 2
+
+
 [END]
 Ramirez, Ethan
 5
@@ -1049,6 +1111,7 @@ Ramirez, Ethan
 ++++++++++++++++
 ++++++++++++++++
 ++++++++++++++++
+
 [END]
 Reflogle, Daniel
 5
@@ -1059,6 +1122,7 @@ Reflogle, Daniel
           +    +
 +         +    +
 +         +    +
+
 [END]
 Rosen, Annie
 5
@@ -1069,6 +1133,7 @@ Rosen, Annie
 ++++++++++++++++
 ++++++++++++++++
 ++++++++++++++++
+
 [END]
 Ross, Ben
 5
@@ -1079,6 +1144,7 @@ Ross, Ben
 ++++++++++++++++
 ++++++++++++++++
 ++++++++++++++++
+
 [END]
 Sam-Vargas, Jonathan
 5
@@ -1089,6 +1155,7 @@ Sam-Vargas, Jonathan
 ++++++++++++++++
 ++++++++++++++++
 ++++++++++++++++
+
 [END]
 Saron, Rayna
 5
@@ -1098,7 +1165,8 @@ xxxxxxxxxx+  xxx
 xxxxxxxxxxxx --+
 +-----++ -------
          -------
-             Acme Bread (at 6pm) = 1
+                
+Acme Bread (at 6pm) = 1
 After Dinner Kitchen + Dining Clean = 2
 Bathroom - First Floor = 1
 Bathroom - Second Floor = 1
@@ -1137,6 +1205,8 @@ Pots - Morning = 1
 Pots - Morning = 1
 Snack: General = 3
 Vacuum = 5
+
+
 [END]
 Sarracino, Luigi
 5
@@ -1193,6 +1263,8 @@ Pots - Morning = 2
 Pots - Morning = 2
 Snack: General = 3
 Vacuum = 4
+
+
 [END]
 Satin, Dani
 5
@@ -1234,6 +1306,8 @@ Pots - Evening = 2
 Pots - Morning = 1
 Pots - Morning = 1
 Vacuum = 2
+
+
 [END]
 Shalvarjian, Katie
 5
@@ -1244,6 +1318,7 @@ Shalvarjian, Katie
 ++++++++++++++++
 ++++++++++++++++
 ++++++++++++++++
+
 [END]
 Sharrar, Allison
 5
@@ -1296,6 +1371,8 @@ Pots - Morning = 1
 Pots - Morning = 1
 Snack: General = 2
 Vacuum = 1
+
+
 [END]
 Singh, Hans
 5
@@ -1346,6 +1423,8 @@ Pots - Evening = 1
 Pots - Morning = 1
 Pots - Morning = 1
 Vacuum = 1
+
+
 [END]
 Spires, Liam
 5
@@ -1386,6 +1465,8 @@ Pots - Evening = 4
 Pots - Morning = 4
 Pots - Morning = 4
 Vacuum = 4
+
+
 [END]
 Stewart, Brian
 5
@@ -1396,6 +1477,7 @@ Stewart, Brian
 ++++++++++++++++
 ++++++++++++++++
 ++++++++++++++++
+
 [END]
 Strain, Simon
 5
@@ -1415,6 +1497,8 @@ Food_Pickup = 1
 Food_Putaway = 4
 IKC = 4
 Mail Sort + Forward = 3
+
+
 [END]
 Tajer, Cyrus
 5
@@ -1475,6 +1559,8 @@ Pots - Morning = 5
 Pots - Morning = 5
 Snack: General = 4
 Vacuum = 3
+
+
 [END]
 Vavra, Ellis
 5
@@ -1485,6 +1571,7 @@ Vavra, Ellis
 ++++++++++++++++
 ++++++++++++++++
 ++++++++++++++++
+
 [END]
 Wade, Kristen
 5
@@ -1528,6 +1615,8 @@ Pots - Morning = 0
 Pots - Morning = 0
 Snack: General = 5
 Vacuum = 3
+
+
 [END]
 Wagner, Emily
 5
@@ -1550,6 +1639,8 @@ IKC = 5
 *IKC Manager = 3
 CFS = 3
 CFS = 3
+
+
 [END]
 Wang, Stephanie
 5
@@ -1580,6 +1671,8 @@ Morning/Afternoon Kitchen + Dining Clean = 5
 Nook + Shelf + Aquarium + Roof Clean = 5
 Perimeter and Roof Clean = 5
 Vacuum = 3
+
+
 [END]
 Wartzman, Nathaniel
 5
@@ -1632,6 +1725,8 @@ Pots - Evening = 1
 Pots - Morning = 1
 Pots - Morning = 1
 Vacuum = 5
+
+
 [END]
 Weaver, David
 5
@@ -1692,6 +1787,8 @@ Pots - Morning = 2
 Pots - Morning = 2
 Snack: General = 3
 Vacuum = 4
+
+
 [END]
 Weiherer, Lauren
 5
@@ -1702,6 +1799,7 @@ Weiherer, Lauren
                 
                 
                 
+
 [END]
 Wertman, Holly
 5
@@ -1754,6 +1852,8 @@ Pots - Morning = 3
 Pots - Morning = 3
 Snack: General = 5
 Vacuum = 3
+
+
 [END]
 Williams, Annika
 5
@@ -1783,6 +1883,8 @@ Nook + Shelf + Aquarium + Roof Clean = 4
 Perimeter and Roof Clean = 3
 Snack: General = 3
 Vacuum = 2
+
+
 [END]
 Xu, Yao
 5
@@ -1793,4 +1895,5 @@ Xu, Yao
 ++++++++++++++++
 ++++++++++++++++
 ++++++++++++++++
+
 [END]

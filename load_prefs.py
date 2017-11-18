@@ -65,6 +65,9 @@ for name in names:
 				scheds+="\n"
 				x = 8
 
+		if x!=8:
+			scheds+=(24-x)*' '+"\n"
+
 		people.write(name+"\n")
 		people.write("5"+"\n")
 		people.write(scheds)

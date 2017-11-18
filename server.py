@@ -81,7 +81,7 @@ class SortingHatRequestHandler(BaseHTTPRequestHandler):
 				shifts.write(urllib.unquote(args["shifts"]))
 				shifts.close()
 
-				output = os.popen("python algo2.py").read()                         # connect and read the output from the algorithym
+				output = os.popen("python algo2.py 2>&1").read()                         # connect and read the output from the algorithym
 				output = "<br/>"+output.replace("\n","<br/>")
 				self.wfile.write(output)                                            # then send to client
 
