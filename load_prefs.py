@@ -2,8 +2,8 @@ import sys, requests,getpass,re
 
 #user = raw_input("Login: ")
 #pswd = getpass.getpass("Password: ")
-user = "kngworkshift"
-pswd = "fifty two pickup"
+user = sys.argv[1]
+pswd = sys.argv[2]
 
 days = ["M|T|W|Th|F|S|Su","M","T","W","Th","F","S","Su"]
 
@@ -40,7 +40,6 @@ for entry in table.split("\n"):
 people = open("data/people.txt","w")
 
 for name in names:
-	print name
 	prefs = []
 	pref_list = requests.get("https://workshift.bsc.coop/kng/admin/show_prefs.php",cookies=cookies, params={"person":name}).text
 	for line in pref_list.split("\n"):

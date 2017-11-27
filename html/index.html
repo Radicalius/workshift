@@ -39,9 +39,21 @@
 		</table>
 	</form>
 	<h2> Load from Server </h2>
+	<table>
+		<tr>
+			<td>Username: </td>
+			<td><input id=user type=text></input></td>
+		</tr>
+		<tr>
+			<td>Password: </td>
+			<td><input id=pass type=password></input></td>
+		</tr>
+		<tr>
+			<td colspan=2 align=right><button id=sync type=button onclick="javascript:onSync()"> Sync with BSC Server (Not Synced)</button></td>
+		</tr>
+	</table><br/><br/>
 	<button type=button onclick="javascript:onLoadFromServer()"> Load From Server </button></body>
-	<button id=sync type=button onclick="javascript:onSync()"> Sync with BSC Server (Not Synced)</button><br/>
-	<a href=/people.txt download>Download Preferences</a><br/>
+	<a href=/people.txt download>Download Preferences</a>
 	<a href=/shifts.csv download>Download Shifts</a>
 	<hr/>
 
@@ -75,3 +87,4 @@
 	<a href=/res.csv download>Download Results (res.csv)</a><br/>
 	<div id=results></div>
 </body>
+</html>

@@ -9,7 +9,7 @@ var btfact;
 var log;
 
 var shifts = [["'Pots (Sample)'",2, "T|Th", 13, 14, 2]];
-var people = [["'The Goat (Sample)'", 5, "3131232313312313", "xxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxxx"]]
+var people = [["'The Goat (Sample)'", 5, "", "xxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxxx"]]
 
 // onload: load elements
 // create forms
@@ -70,7 +70,7 @@ function removeShift(index){
 
 // adds blank person to the table
 function addPerson(index){
-	people.push(["''", 5, "3333333333333333", "                \n                \n                \n                \n                \n                \n                "]);
+	people.push(["''", 5, "", "                \n                \n                \n                \n                \n                \n                "]);
 	createForms();
 }
 
@@ -231,9 +231,12 @@ function onLoadFromServer(){
 }
 
 function onSync() {
-	var button = document.getElementById("sync")
+	var button = document.getElementById("sync");
+	var pass = document.getElementById("pass");
+	var user = document.getElementById("user")
 	button.innerHTML="Sync with BSC Server (Running)";
-	httpGetAsync("/sync", function(text) {
+	alert(user.value);
+	httpGetAsync("/sync?user="+user.value+"&pass="+pass.value, function(text) {
 		button.innerHTML = "Sync with BSC Server ("+text+")";
 	});
 	onLoadFromServer();

@@ -11,7 +11,7 @@
 # Website will be hosted on localhost:[port]
 ###############################################################################################################################
 
-import BaseHTTPServer,sys, urllib, os
+import BaseHTTPServer,sys, urllib, os,ssl
 from BaseHTTPServer import *
 
 # default port
@@ -39,7 +39,7 @@ class SortingHatRequestHandler(BaseHTTPRequestHandler):
 		# self.path is the relative url requested
 
 		# check to see that the requested url is valid
-		if self.path in ["/", "/main.js","/res.csv","/shifts.csv","/people.txt","/sync"] or self.path.startswith("/query"):
+		if self.path in ["/", "/main.js","/res.csv","/shifts.csv","/people.txt"] or self.path.startswith("/query") or self.path.startswith("/sync"):
 		
 			# Inform the client that the request was successful and we are sending HTML
 			self.send_response(200)
@@ -87,8 +87,14 @@ class SortingHatRequestHandler(BaseHTTPRequestHandler):
 
 			elif self.path.startswith("/sync"):                                     # user is requesting to grab preferences from bsc.coop
 
+				# extract user and pass
+				path = self.path.split("?")[1]
+				args = path.split("&")
+				user = args[0].split("=")[1]
+				pswd = args[1].split("=")[1]
+
 				# run load_prefs script
-				os.system("python load_prefs.py")
+				os.system("python load_prefs.py '"+urllib.unquote(user)+"' '"+urllib.unquote(pswd)+"'")
 				self.wfile.write("Finished")
 
 			else:
@@ -111,8 +117,8 @@ class SortingHatRequestHandler(BaseHTTPRequestHandler):
 		page = open("html/{0}".format(file), "r")
 		contents = page.read()
 		self.wfile.write(contents)
-		self.wfile.close()
 
 # Start Server
 server = HTTPServer(("", port), SortingHatRequestHandler)
+server.socket = ssl.wrap_socket(server.socket, certfile=os.environ["HOME"]+'/.ssl/cert.pem', server_side=True)
 server.serve_forever()
