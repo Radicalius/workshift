@@ -18,8 +18,16 @@ from math import ceil
 
 # CONSTANTS #
 
-# relative path to directory containing person.txt, types.txt, and shifts.txt
-data_path = "data"
+# Load variables from config file
+config = {}
+conf = open("config"+os.sep+"config.cfg","r")
+for line in conf:
+	if ":" in line:
+		vals = line.split(":")
+		config[vals[0].strip()] = vals[1].strip()
+
+# relative path to directory containing person.txt, and shifts.txt
+data_path = config["DATA"]
 
 # shorthands for days of the week.
 day_desc = ["M","T","W","Th","F","S","Su"]
@@ -32,8 +40,8 @@ day_desc = ["M","T","W","Th","F","S","Su"]
 #   x constant 0 desireability because the person cannot work at that time
 pref_mult = {'+':1.5, '-':0.5, ' ':1.0, 'x':0}
 
-# timeout for stage 1
-timeout = 10000
+# timeout for stage 1 in iterations
+timeout = 100000
 
 # UTILITY FUNCTIONS #
 
@@ -260,11 +268,6 @@ class Shift(object):
 		return shifts
 
 # LOAD DATA #
-
-# load types of shifts from file
-f = open(data_path + os.sep + "types.txt")
-cont = f.readlines()
-shift_types = [i.strip() for i in cont]
 
 # load the people
 people = Person.load(data_path + os.sep + "people.txt")

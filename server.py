@@ -14,19 +14,20 @@
 import BaseHTTPServer,sys, urllib, os,ssl
 from BaseHTTPServer import *
 
-# default port
-port = 8000
+# Holds values from config file
+config = {}
 
-# get port from args
-if len(sys.argv) >= 2:
-	try:
-		port = int(sys.argv[1])
-	except:
-		print "Invalid Port Specified: Must be Integer"
-		sys.exit(1)                                          # exit code 1 for invalid arguments
-else:
-	print "usage: python server.py [port]"
-	sys.exit(1)
+# Load variables from config file
+conf = open("config"+os.sep+"config.cfg","r")
+for line in conf:
+	if ":" in line:
+		vals = line.split(":")
+		config[vals[0].strip()] = vals[1].strip()
+
+try:
+	port = int(config["PORT"])
+except:
+	print "Invalid or no Port Specified (Must be integer) Check value listed in config/config.cfg"
 
 # Customize the basic request handler
 class SortingHatRequestHandler(BaseHTTPRequestHandler):
@@ -49,22 +50,22 @@ class SortingHatRequestHandler(BaseHTTPRequestHandler):
 			if self.path == "/":
 
 				# send the contents of html/index.html
-				self.send_page("index.html")
+				self.send_page("html" + os.sep+"index.html")
 
 			elif self.path == "/res.csv":
 
 				# send contents of /data/res.csv (a little hacky :))
-				self.send_page("../data/res.csv")
+				self.send_page(config["DATA"] + os.sep + "res.csv")
 
 			elif self.path == "/shifts.csv":
 
 				# send contents of /data/shifts.csv
-				self.send_page("../data/shifts.csv")
+				self.send_page(config["DATA"] + os.sep + "shifts.csv")
 
 			elif self.path == "/people.txt":
 
 				# send contents of /data/res.csv (a little hacky :))
-				self.send_page("../data/people.txt")
+				self.send_page(config["DATA"] + os.sep + "people.txt")
 
 
 			elif self.path.startswith("/query"):   # job request
@@ -73,15 +74,15 @@ class SortingHatRequestHandler(BaseHTTPRequestHandler):
 				query_string = self.path.split("?")[1]                              # remove /query?
 				args = dict([arg.split("=") for arg in query_string.split("&")])    # key value pairs of query string
 
-				people = open("data/people.txt","w")
+				people = open(config["DATA"] + os.sep + "people.txt","w")
 				people.write(urllib.unquote(args["people"]))
 				people.close()
 
-				shifts = open("data/shifts.csv","w")
+				shifts = open(config["DATA"] + os.sep + "shifts.csv","w")
 				shifts.write(urllib.unquote(args["shifts"]))
 				shifts.close()
 
-				output = os.popen("python algo2.py 2>&1").read()                         # connect and read the output from the algorithym
+				output = os.popen(config["PYTHON"] + " algo2.py 2>&1").read()                         # connect and read the output from the algorithym
 				output = "<br/>"+output.replace("\n","<br/>")
 				self.wfile.write(output)                                            # then send to client
 
@@ -94,13 +95,13 @@ class SortingHatRequestHandler(BaseHTTPRequestHandler):
 				pswd = args[1].split("=")[1]
 
 				# run load_prefs script
-				os.system("python load_prefs.py '"+urllib.unquote(user)+"' '"+urllib.unquote(pswd)+"'")
+				os.system(config["PYTHON"] + "load_prefs.py '"+urllib.unquote(user)+"' '"+urllib.unquote(pswd)+"'")
 				self.wfile.write("Finished")
 
 			else:
 
 				# send the contents of html/[path]
-				self.send_page(self.path) 
+				self.send_page("html" + os.sep + self.path) 
 
 		else:
 
@@ -114,11 +115,11 @@ class SortingHatRequestHandler(BaseHTTPRequestHandler):
 
 	def send_page(self,file):
 		# send the HTML code contained in file to the client's browser 
-		page = open("html/{0}".format(file), "r")
+		page = open(file, "r")
 		contents = page.read()
 		self.wfile.write(contents)
 
 # Start Server
 server = HTTPServer(("", port), SortingHatRequestHandler)
-server.socket = ssl.wrap_socket(server.socket, certfile=os.environ["HOME"]+'/.ssl/cert.pem', server_side=True)
+server.socket = ssl.wrap_socket(server.socket, certfile=config["CERTIFICATE"], server_side=True)
 server.serve_forever()
