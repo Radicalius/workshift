@@ -4,6 +4,7 @@ import sys, requests,getpass,re
 #pswd = getpass.getpass("Password: ")
 user = sys.argv[1]
 pswd = sys.argv[2]
+house = sys.argv[3]
 
 days = ["M|T|W|Th|F|S|Su","M","T","W","Th","F","S","Su"]
 
@@ -17,18 +18,18 @@ def convert_time(time):
 	except:
 		return "*"
 
-login = requests.post("https://workshift.bsc.coop/kng/admin/index.php", data={"officer_name":user,"officer_passwd":pswd})
+login = requests.post("https://workshift.bsc.coop/{0}/admin/index.php".format(house), data={"officer_name":user,"officer_passwd":pswd})
 cookies = login.cookies
 
 names = []
-name_list = requests.get("https://workshift.bsc.coop/kng/admin/show_prefs.php",cookies=cookies).text
+name_list = requests.get("https://workshift.bsc.coop/{0}/admin/show_prefs.php".format(house),cookies=cookies).text
 for line in name_list.split("\n"):
 	if line.startswith("<OPTION>"):
 		names.append(line.replace("<OPTION>",""))
 
 shifts = open("data/shifts.csv","w")
 
-shift_table = requests.get("https://workshift.bsc.coop/kng/admin/master_shifts.php",cookies=cookies).text
+shift_table = requests.get("https://workshift.bsc.coop/{0}/admin/master_shifts.php".format(house),cookies=cookies).text
 table = shift_table.split("""<table id="bodytable" cellspacing='0'>\n<thead>""")[1].split("</tbody></table>")[0]
 for entry in table.split("\n"):
 	values = entry.split("value=")
@@ -41,7 +42,7 @@ people = open("data/people.txt","w")
 
 for name in names:
 	prefs = []
-	pref_list = requests.get("https://workshift.bsc.coop/kng/admin/show_prefs.php",cookies=cookies, params={"person":name}).text
+	pref_list = requests.get("https://workshift.bsc.coop/{0}/admin/show_prefs.php".format(house),cookies=cookies, params={"person":name}).text
 	for line in pref_list.split("\n"):
 		g = line.split("<td class='td1'>")
 		if len(g) > 1:

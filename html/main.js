@@ -233,10 +233,11 @@ function onLoadFromServer(){
 function onSync() {
 	var button = document.getElementById("sync");
 	var pass = document.getElementById("pass");
-	var user = document.getElementById("user")
+	var user = document.getElementById("user");
+	var house = document.getElementById("house")
 	button.innerHTML="Sync with BSC Server (Running)";
 	alert(user.value);
-	httpGetAsync("/sync?user="+user.value+"&pass="+pass.value, function(text) {
+	httpGetAsync("/sync?user="+user.value+"&pass="+pass.value+"&house="+house.value, function(text) {
 		button.innerHTML = "Sync with BSC Server ("+text+")";
 	});
 	onLoadFromServer();

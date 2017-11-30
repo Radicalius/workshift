@@ -93,9 +93,10 @@ class SortingHatRequestHandler(BaseHTTPRequestHandler):
 				args = path.split("&")
 				user = args[0].split("=")[1]
 				pswd = args[1].split("=")[1]
+				house = args[2].split("=")[1]
 
 				# run load_prefs script
-				os.system(config["PYTHON"] + "load_prefs.py '"+urllib.unquote(user)+"' '"+urllib.unquote(pswd)+"'")
+				os.system(config["PYTHON"] + " load_prefs.py '"+urllib.unquote(user)+"' '"+urllib.unquote(pswd)+"' '"+urllib.unquote(house)+"'")
 				self.wfile.write("Finished")
 
 			else:
