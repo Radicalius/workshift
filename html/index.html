@@ -52,16 +52,35 @@
 			<td>House: </td>
 			<td>
 				<select id=house>
-					<option value=hoy>Hoyt</option>
-					<option value=kng>Kingman</option>
-
+					<option value='ath'>Afro</option>
+					<option value='aca'>Castro</option>
+					<option value='caz'>CZ</option>
+					<option value='clo'>Cloyne</option>
+					<option value='con'>Convent</option>
+					<option value='dav'>Davis</option>
+					<option value='ath'>Afro</option>
+					<option value='euc'>Euclid</option>
+					<option value='fen'>Fenwick</option>
+					<option value='hip'>Hillegrass-Parker</option>
+					<option value='hoy'>Hoyt</option>
+					<option value='kid'>Kidd</option>
+					<option value='kng'>Kingman</option>
+					<option value='lot'>Loth</option>
+					<option value='nsc'>Northside</option>
+					<option value='rid'>Ridge</option>
+					<option value='roc'>Rochdale</option>
+					<option value='she'>Sherman</option>
+					<option value='stb'>Stebbins</option>
+					<option value='wil'>Wilde</option>
+					<option value='wol'>Wolfe</option>
 				</select>
 			</td>
 		</tr>
 		<tr>
-			<td colspan=2 align=right><button id=sync type=button onclick="javascript:onSync()"> Sync with BSC Server (Not Synced)</button></td>
+			<td colspan=2 align=right><button id=sync type=button onclick="javascript:onSync()"> Sync with BSC Server </button></td>
 		</tr>
-	</table><br/><br/>
+	</table>
+	<p id=syncmesg> Not Yet Synced </p>
 	<button type=button onclick="javascript:onLoadFromServer()"> Load From Server </button></body>
 	<a href=/people.txt download>Download Preferences</a>
 	<a href=/shifts.csv download>Download Shifts</a>

@@ -19,6 +19,9 @@ def convert_time(time):
 		return "*"
 
 login = requests.post("https://workshift.bsc.coop/{0}/admin/index.php".format(house), data={"officer_name":user,"officer_passwd":pswd})
+if login.status_code != 200:
+	print "<font color=#FF0000>Unable to Connect to BSC Server<br/>Check the availability of workshift.bsc.org and try again<br/>Not Yet Synced</font>"
+	sys.exit(1)
 cookies = login.cookies
 
 names = []
@@ -26,6 +29,10 @@ name_list = requests.get("https://workshift.bsc.coop/{0}/admin/show_prefs.php".f
 for line in name_list.split("\n"):
 	if line.startswith("<OPTION>"):
 		names.append(line.replace("<OPTION>",""))
+
+if names[0] == "":
+	print "<font color=#FF0000>Unable to Connect to BSC Server<br/>Check your credentials and try again<br/>Not Yet Synced</font color=#FF0000>"
+	sys.exit(2)
 
 shifts = open("data/shifts.csv","w")
 
@@ -76,3 +83,5 @@ for name in names:
 		people.write("[END]\n")
 	except:
 		pass
+
+print "<font color=#00FF00>Sync Successful</font>"

@@ -7,8 +7,7 @@
 # Version: 1.0.0 Alpha
 # Contact: mr.zacharycotton@gmail.com
 # Hosts the website for the assignment program
-# Usage: python server.py [port]
-# Website will be hosted on localhost:[port]
+# Usage: python server.py
 ###############################################################################################################################
 
 import BaseHTTPServer,sys, urllib, os,ssl
@@ -96,8 +95,8 @@ class SortingHatRequestHandler(BaseHTTPRequestHandler):
 				house = args[2].split("=")[1]
 
 				# run load_prefs script
-				os.system(config["PYTHON"] + " load_prefs.py '"+urllib.unquote(user)+"' '"+urllib.unquote(pswd)+"' '"+urllib.unquote(house)+"'")
-				self.wfile.write("Finished")
+				output = os.popen(config["PYTHON"] + " load_prefs.py '"+urllib.unquote(user)+"' '"+urllib.unquote(pswd)+"' '"+urllib.unquote(house)+"'").read()
+				self.wfile.write(output)
 
 			else:
 

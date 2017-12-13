@@ -1,0 +1,1797 @@
+Arney, Lawrence
+5
+--         xxxxx
+-xxxxxxx++++    
+--  ++++  xxxx  
+-xxxxxxx+++++   
+--   +++++++    
+                
+                
+IKC = 4
+Co-Cook = 5
+Co-Cook = 5
+Co-Cook = 5
+[END]
+Askew, Ryan
+5
+--++++++++++++++
+--++xxxxxxxx++++
+--++++++++++++++
+--++xxxxxxxx++++
+--++++++++++++++
+--++++++++++++++
+--+++++++++++---
+Bathroom = 1
+Cleaning_and_Organization = 5
+CO = 3
+Dishroom = 4
+Food = 2
+Food_Pickup = 3
+Food_Putaway = 5
+IKC = 1
+[END]
+Astvatsatrian, Nelli
+5
+xxxxxxxxx+++xxxx
+xxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxx
+xxx+++++++xxxxxx
+xxxxxxxx+++++xxx
+xxxxxxxx+++++xxx
+Bathroom = 1
+CO = 1
+Dishroom = 4
+Food = 3
+IKC = 3
+After Dinner Kitchen + Dining Clean = 2
+Bathroom - First Floor = 1
+Bathroom - Second Floor = 1
+Bathroom - Third Floor = 1
+Co-Cook = 3
+Co-Cook = 3
+Co-Cook = 3
+Dishes - Before Dinner = 5
+Dishes - Early Afternoon = 5
+Dishes - Evening = 5
+Dishes - Morning = 5
+Evening Sweep + Mop = 3
+Free Pile Clean = 1
+Living and Study Room Clean = 5
+Mail Sort + Forward = 5
+Morning/Afternoon Kitchen + Dining Clean = 3
+Nook + Shelf + Aquarium + Roof Clean = 3
+Perimeter and Roof Clean = 1
+Pots - Afternoon = 1
+Pots - Evening = 1
+Pots - Evening = 1
+Pots - Morning = 1
+Pots - Morning = 1
+Snack: General = 1
+Vacuum = 4
+[END]
+Barad, Mia
+5
+-------   ------
+----+++++ ------
+----++++--------
+---- +++++++----
+---- +++--------
+----  ----   ---
+----      ------
+Bathroom = 3
+CO = 2
+Dishroom = 1
+IKC = 2
+After Dinner Kitchen + Dining Clean = 3
+Bathroom - First Floor = 3
+Bathroom - Second Floor = 2
+Bathroom - Third Floor = 3
+CFS delivery putaway = 1
+Co-Cook = 5
+Co-Cook = 5
+Co-Cook = 5
+Earls Delivery Putaway = 3
+Evening Sweep + Mop = 2
+Free Pile Clean = 5
+Leftovers Putaway = 2
+Living and Study Room Clean = 3
+Mail Sort + Forward = 5
+Morning/Afternoon Kitchen + Dining Clean = 2
+Nook + Shelf + Aquarium + Roof Clean = 4
+Perimeter and Roof Clean = 2
+Snack: General = 4
+Vacuum = 1
+[END]
+Berger-Cahn, Jonah
+5
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+[END]
+Bertrando, Ian
+5
+- + x x +++++   
+-x   xxxxxx ++  
+- + x x   ++++  
+- +   xxx ++-   
+- + x x     ----
+-           ----
+-               
+Bathroom = 3
+CO = 3
+Dishroom = 3
+Food = 3
+IKC = 4
+[END]
+Brin, Sonia
+5
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+[END]
+Brown, Emil
+5
+                
+                
+                
+                
+                
+                
+                
+[END]
+Bryon, Jacob
+5
+++x  xxx+++     
+xxxxxxxxxxxxxx  
+++x  xxx xx     
+xxxxxxxx  xxxxx 
+++x  xxx        
+                
+                
+Bathroom = 3
+Cleaning_and_Organization = 3
+CO = 2
+Food_Pickup = 3
+Food_Putaway = 3
+IKC = 4
+Co-Cook = 5
+Co-Cook = 5
+Co-Cook = 5
+Dishes - Before Dinner = 3
+Dishes - Early Afternoon = 3
+Dishes - Evening = 3
+Dishes - Morning = 5
+Pots - Afternoon = 4
+Pots - Evening = 3
+Pots - Evening = 3
+Pots - Morning = 5
+Pots - Morning = 5
+Snack: General = 3
+[END]
+Cotton, Zachary
+5
+x   -x-+++++++--
+   -xx-+++++++--
+x -xxx-xxx-+++--
+   -xx-+++++++--
+x   -x-+++++++--
+              --
+              --
+Bathroom = 2
+Dishroom = 4
+Food = 4
+IKC = 5
+Bathroom - First Floor = 2
+Bathroom - Second Floor = 2
+Bathroom - Third Floor = 2
+Co-Cook = 5
+Co-Cook = 5
+Co-Cook = 5
+Dishes - Before Dinner = 4
+Dishes - Early Afternoon = 4
+Dishes - Evening = 4
+Dishes - Morning = 4
+Pots - Afternoon = 5
+Pots - Afternoon = 5
+Pots - Evening = 5
+Pots - Evening = 5
+Pots - Morning = 5
+Pots - Morning = 5
+[END]
+Cruz, Frankie
+5
+xxxxxxxxxxxxxxxx
+   xx   xxxx----
+++++++++-xx-----
+   xxxx++++xxxxx
+++++---+++++++++
+++++++++++++++++
+++++++++++++++++
+Bathroom = 4
+Cleaning_and_Organization = 4
+CO = 3
+Dishroom = 4
+Food = 1
+Food_Pickup = 2
+Food_Putaway = 2
+IKC = 1
+ = 1
+*IKC Manager = 1
+Acme Bread (at 6pm) = 2
+After Dinner Kitchen + Dining Clean = 3
+Bathroom - First Floor = 4
+Bathroom - Second Floor = 4
+Bathroom - Third Floor = 4
+CFS = 3
+CFS = 3
+CFS = 3
+CFS delivery putaway = 2
+Co-Cook = 1
+Co-Cook = 1
+Co-Cook = 1
+Dishes - Before Dinner = 1
+Dishes - Early Afternoon = 1
+Dishes - Evening = 3
+Dishes - Morning = 5
+Earls Delivery Putaway = 2
+Evening Sweep + Mop = 3
+IKC = 1
+IKC = 1
+IKC = 1
+IKC = 1
+IKC = 1
+IKC = 1
+IKC = 1
+IKC = 1
+Leftovers Putaway = 2
+Living and Study Room Clean = 4
+Mail Sort + Forward = 4
+Morning/Afternoon Kitchen + Dining Clean = 3
+Noahs Bagels (before 3pm) = 2
+Nook + Shelf + Aquarium + Roof Clean = 4
+Perimeter and Roof Clean = 5
+Pots - Afternoon = 1
+Pots - Evening = 3
+Pots - Evening = 3
+Pots - Morning = 5
+Pots - Morning = 5
+Snack: General = 2
+Vacuum = 4
+[END]
+Curtin-Savala, Mateo
+5
+---   xxxxxxx  -
+   xx xxxx    --
+               -
+      xxxx     -
+----------------
+----------------
+----------------
+ = 4
+Acme Bread (at 6pm) = 1
+After Dinner Kitchen + Dining Clean = 1
+Bathroom - First Floor = 1
+Bathroom - Second Floor = 1
+Bathroom - Third Floor = 1
+CFS = 3
+CFS = 3
+CFS = 3
+CFS delivery putaway = 1
+Co-Cook = 2
+Co-Cook = 2
+Co-Cook = 2
+Dishes - Before Dinner = 2
+Dishes - Early Afternoon = 2
+Dishes - Evening = 4
+Dishes - Morning = 4
+Earls Delivery Putaway = 1
+Evening Sweep + Mop = 1
+IKC = 5
+IKC = 5
+IKC = 5
+IKC = 5
+IKC = 5
+IKC = 5
+IKC = 5
+IKC = 5
+Leftovers Putaway = 2
+Living and Study Room Clean = 4
+Mail Sort + Forward = 3
+Morning/Afternoon Kitchen + Dining Clean = 1
+Noahs Bagels (before 3pm) = 1
+Nook + Shelf + Aquarium + Roof Clean = 3
+Perimeter and Roof Clean = 5
+Pots - Afternoon = 1
+Pots - Evening = 1
+Pots - Evening = 1
+Pots - Morning = 1
+Pots - Morning = 1
+Snack: General = 3
+Vacuum = 4
+[END]
+Ellis, Hannah
+5
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+[END]
+Farrell, Mathilda
+5
+----xx++x+++----
+----xxxx++++----
+----++++x+++----
+----++xx+++xx---
+----------------
+xxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxx
+Bathroom = 1
+Cleaning_and_Organization = 4
+CO = 1
+Dishroom = 3
+Food = 5
+Food_Pickup = 1
+Food_Putaway = 5
+IKC = 1
+ = 1
+ = 1
+ = 1
+Acme Bread (at 6pm) = 1
+After Dinner Kitchen + Dining Clean = 1
+Bathroom - First Floor = 1
+Bathroom - Second Floor = 1
+Bathroom - Third Floor = 1
+CFS = 1
+CFS delivery putaway = 5
+Co-Cook = 5
+Co-Cook = 5
+Co-Cook = 5
+Dishes - Before Dinner = 4
+Dishes - Early Afternoon = 4
+Dishes - Evening = 1
+Dishes - Morning = 2
+Earls Delivery Putaway = 5
+Evening Sweep + Mop = 1
+Free Pile Clean = 1
+IKC = 1
+IKC = 1
+IKC = 1
+IKC = 1
+IKC = 1
+IKC = 1
+IKC = 1
+IKC = 1
+Leftovers Putaway = 2
+Living and Study Room Clean = 5
+Mail Sort + Forward = 5
+Morning/Afternoon Kitchen + Dining Clean = 5
+Noahs Bagels (before 3pm) = 1
+Nook + Shelf + Aquarium + Roof Clean = 5
+Perimeter and Roof Clean = 5
+Pots - Afternoon = 1
+Pots - Evening = 1
+Pots - Evening = 1
+Pots - Morning = 1
+Pots - Morning = 1
+Snack: General = 5
+Vacuum = 1
+[END]
+Fudin, Genna
+5
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+[END]
+Garrison, Grace
+5
+xxxxxxx++++++---
+xxxxxx+++++++---
+xxxxxxx++++++---
+xxxxxx+++++++---
+xxxxxxxxxx      
+                
+                
+Bathroom = 3
+ = 3
+ = 3
+ = 3
+Acme Bread (at 6pm) = 3
+After Dinner Kitchen + Dining Clean = 3
+CFS = 3
+CFS delivery putaway = 3
+Co-Cook = 5
+Co-Cook = 5
+Co-Cook = 5
+Dishes - Before Dinner = 5
+Dishes - Early Afternoon = 4
+Dishes - Evening = 5
+Dishes - Morning = 4
+Earls Delivery Putaway = 3
+Evening Sweep + Mop = 1
+Free Pile Clean = 3
+IKC = 3
+IKC = 3
+IKC = 3
+IKC = 3
+IKC = 3
+IKC = 3
+IKC = 3
+IKC = 3
+Leftovers Putaway = 3
+Living and Study Room Clean = 3
+Mail Sort + Forward = 3
+Morning/Afternoon Kitchen + Dining Clean = 3
+Noahs Bagels (before 3pm) = 3
+Nook + Shelf + Aquarium + Roof Clean = 3
+Perimeter and Roof Clean = 3
+Pots - Afternoon = 1
+Pots - Evening = 1
+Pots - Evening = 1
+Pots - Morning = 1
+Pots - Morning = 1
+Snack: General = 5
+Vacuum = 2
+[END]
+Georgiou, Tomas
+5
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+[END]
+Getter, Daniel
+5
+xxx--xxx++      
+xx xxxx    ++   
+xxx--xx-xx      
+   xxxx    ++   
+xxx--xx    -----
+    +++       --
+    ++++        
+Bathroom = 2
+ = 3
+ = 3
+ = 3
+Acme Bread (at 6pm) = 3
+After Dinner Kitchen + Dining Clean = 3
+CFS delivery putaway = 3
+Co-Cook = 2
+Co-Cook = 2
+Co-Cook = 2
+Dishes - Before Dinner = 2
+Dishes - Early Afternoon = 1
+Dishes - Evening = 3
+Dishes - Morning = 1
+Earls Delivery Putaway = 3
+Evening Sweep + Mop = 2
+Free Pile Clean = 3
+IKC = 3
+IKC = 3
+IKC = 3
+IKC = 3
+IKC = 3
+IKC = 3
+IKC = 3
+IKC = 3
+Leftovers Putaway = 4
+Living and Study Room Clean = 3
+Mail Sort + Forward = 3
+Morning/Afternoon Kitchen + Dining Clean = 2
+Noahs Bagels (before 3pm) = 3
+Nook + Shelf + Aquarium + Roof Clean = 2
+Perimeter and Roof Clean = 3
+Pots - Afternoon = 2
+Pots - Evening = 3
+Pots - Evening = 3
+Pots - Morning = 1
+Pots - Morning = 1
+Snack: General = 3
+Vacuum = 5
+[END]
+Ghouas, Alvin
+5
+xx-++++++++++---
+xxxxxxxxxx--++--
+xxxxxxxxxxxxxxxx
+xxxxxxxxxxxx++--
+-----++x++------
+----------------
+---------------x
+Bathroom = 1
+CO = 1
+Dishroom = 4
+Food = 5
+IKC = 4
+[END]
+Gonzalez, Andrea
+5
+++++++++++++++++
+xxx++xxxxxx-----
+++++++++++++++++
+++++++++++++++++
+xxxxxxxxxx++++++
+++++++++++++++++
+++++++++++++++++
+ = 4
+ = 4
+Co-Cook = 5
+Co-Cook = 5
+Co-Cook = 5
+IKC = 4
+IKC = 4
+IKC = 4
+IKC = 4
+IKC = 4
+IKC = 4
+IKC = 4
+IKC = 4
+Mail Sort + Forward = 5
+Noahs Bagels (before 3pm) = 4
+Vacuum = 4
+[END]
+Hendrickson, Brett
+5
+-xxxx+++++++++--
+-xxxxxxxxxxx++--
+----++++++++++--
+-xxxxxxxxxxx++--
+-----xxx++++----
+----------------
+----------------
+Bathroom = 5
+CO = 2
+Dishroom = 2
+Food = 5
+IKC = 4
+ = 4
+ = 5
+ = 4
+Acme Bread (at 6pm) = 5
+After Dinner Kitchen + Dining Clean = 5
+Bathroom - First Floor = 2
+Bathroom - Second Floor = 3
+Bathroom - Third Floor = 5
+CFS delivery putaway = 5
+Co-Cook = 5
+Co-Cook = 5
+Co-Cook = 5
+Dishes - Before Dinner = 2
+Dishes - Early Afternoon = 2
+Dishes - Evening = 3
+Dishes - Morning = 1
+Earls Delivery Putaway = 5
+Evening Sweep + Mop = 5
+Free Pile Clean = 4
+IKC = 4
+IKC = 4
+IKC = 4
+IKC = 4
+IKC = 4
+IKC = 4
+IKC = 4
+IKC = 4
+Leftovers Putaway = 5
+Living and Study Room Clean = 4
+Mail Sort + Forward = 5
+Morning/Afternoon Kitchen + Dining Clean = 4
+Noahs Bagels (before 3pm) = 5
+Nook + Shelf + Aquarium + Roof Clean = 4
+Perimeter and Roof Clean = 4
+Pots - Afternoon = 2
+Pots - Evening = 3
+Pots - Evening = 3
+Pots - Morning = 1
+Pots - Morning = 1
+Snack: General = 5
+Vacuum = 4
+[END]
+Hurd, Gregory
+5
+xxxxxxxxxxx-xx++
+xxxxxxxxxxx     
+xxxxxxxxxxx-xx++
+xxxxxxxxxxxxxxxx
+xxxxxxxxxxx     
+                
+                
+Bathroom = 3
+Cleaning_and_Organization = 3
+CO = 3
+Dishroom = 3
+Food = 3
+Food_Pickup = 5
+Food_Putaway = 3
+IKC = 3
+[END]
+Jipsen, Carli
+5
+-++xxxx--xxx++ -
+-++xxx----xxxx--
+-++x--x--xxx++ -
+-++xxxxx++++++ -
+-++xxxxx+++-----
+----       -----
+----          --
+ = 4
+*IKC Manager = 1
+Acme Bread (at 6pm) = 4
+After Dinner Kitchen + Dining Clean = 3
+Bathroom - First Floor = 3
+Bathroom - Second Floor = 3
+Bathroom - Third Floor = 2
+CFS = 4
+CFS = 4
+CFS = 4
+CFS delivery putaway = 4
+Co-Cook = 5
+Co-Cook = 5
+Co-Cook = 5
+Dishes - Before Dinner = 3
+Dishes - Early Afternoon = 3
+Dishes - Evening = 3
+Dishes - Morning = 3
+Earls Delivery Putaway = 4
+Evening Sweep + Mop = 2
+IKC = 3
+IKC = 3
+IKC = 3
+IKC = 3
+IKC = 3
+IKC = 3
+IKC = 3
+IKC = 3
+Leftovers Putaway = 4
+Living and Study Room Clean = 3
+Mail Sort + Forward = 4
+Morning/Afternoon Kitchen + Dining Clean = 3
+Noahs Bagels (before 3pm) = 4
+Nook + Shelf + Aquarium + Roof Clean = 4
+Perimeter and Roof Clean = 4
+Pots - Afternoon = 1
+Pots - Evening = 1
+Pots - Evening = 1
+Pots - Morning = 1
+Pots - Morning = 1
+Snack: General = 5
+Vacuum = 2
+[END]
+Joaquin, Anthony
+5
+xx-xxxxx+xx++xxx
+xx-xxx+++++++xxx
+xx-xxxxx+xx++xxx
+xx-xxx+++++++xxx
+xxxxxxxx++++-xxx
+--++++++++---xxx
+--++++++++---xxx
+Bathroom = 1
+Cleaning_and_Organization = 4
+CO = 5
+Dishroom = 3
+Food = 5
+Food_Pickup = 3
+Food_Putaway = 5
+IKC = 4
+[END]
+Klein, Zoe
+5
+xxxxxx--+++-----
+xxx--xxx-++-----
+xxxxxxxxxx--++++
+xxxxxxxx++++----
+xxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxx
+Bathroom = 1
+Cleaning_and_Organization = 3
+CO = 1
+Dishroom = 1
+Food = 5
+Food_Pickup = 2
+Food_Putaway = 3
+IKC = 3
+ = 2
+ = 3
+ = 3
+Acme Bread (at 6pm) = 2
+After Dinner Kitchen + Dining Clean = 3
+Bathroom - First Floor = 1
+Bathroom - Second Floor = 1
+Bathroom - Third Floor = 1
+CFS = 1
+CFS delivery putaway = 3
+Co-Cook = 5
+Co-Cook = 5
+Co-Cook = 5
+Dishes - Before Dinner = 1
+Dishes - Early Afternoon = 1
+Dishes - Evening = 1
+Dishes - Morning = 1
+Earls Delivery Putaway = 3
+Evening Sweep + Mop = 3
+Free Pile Clean = 4
+IKC = 3
+IKC = 3
+IKC = 3
+IKC = 3
+IKC = 3
+IKC = 3
+IKC = 3
+IKC = 3
+Leftovers Putaway = 3
+Living and Study Room Clean = 4
+Mail Sort + Forward = 5
+Morning/Afternoon Kitchen + Dining Clean = 2
+Noahs Bagels (before 3pm) = 2
+Nook + Shelf + Aquarium + Roof Clean = 4
+Perimeter and Roof Clean = 2
+Pots - Afternoon = 1
+Pots - Evening = 1
+Pots - Evening = 1
+Pots - Morning = 1
+Pots - Morning = 1
+Snack: General = 3
+Vacuum = 3
+[END]
+Levinson, Elizabeth
+5
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+[END]
+Linden, Audrey
+5
+  x      xxx    
+      xxx       
+  x   xx   xx   
+      xxxxxx    
+  x             
+                
+                
+Bathroom = 1
+Food_Putaway = 2
+IKC = 5
+ = 1
+Acme Bread (at 6pm) = 1
+After Dinner Kitchen + Dining Clean = 1
+Bathroom - First Floor = 1
+Bathroom - Second Floor = 1
+Bathroom - Third Floor = 1
+CFS = 1
+CFS delivery putaway = 2
+Co-Cook = 1
+Co-Cook = 1
+Co-Cook = 1
+Dishes - Before Dinner = 1
+Dishes - Early Afternoon = 4
+Dishes - Evening = 1
+Dishes - Morning = 4
+Earls Delivery Putaway = 2
+Evening Sweep + Mop = 1
+Free Pile Clean = 1
+Leftovers Putaway = 2
+Living and Study Room Clean = 5
+Mail Sort + Forward = 5
+Morning/Afternoon Kitchen + Dining Clean = 3
+Noahs Bagels (before 3pm) = 1
+Nook + Shelf + Aquarium + Roof Clean = 4
+Perimeter and Roof Clean = 1
+Pots - Afternoon = 1
+Pots - Evening = 1
+Pots - Evening = 1
+Pots - Morning = 1
+Pots - Morning = 1
+Snack: General = 5
+Vacuum = 1
+[END]
+Mahowald, Nathaniel
+5
+  xx  xxx xx    
+xxxxxxx         
+xxxx  x         
+xxxx  xx        
+  xx  x         
+                
+        +++     
+Bathroom = 2
+Cleaning_and_Organization = 2
+CO = 3
+Dishroom = 3
+Food = 5
+Food_Pickup = 3
+Food_Putaway = 2
+IKC = 4
+[END]
+Malave, Gabriella
+5
+--xxxxxxxxxx++++
+--+xxxxxxxx+++++
+--xxxxxxxxx+++++
+--xxxxxxxx++++++
+--xxxxxxxxxx++++
+--++++++++++++++
+-------+++++++++
+Bathroom = 3
+Cleaning_and_Organization = 2
+CO = 3
+Dishroom = 1
+Food = 5
+Food_Pickup = 1
+Food_Putaway = 1
+IKC = 4
+ = 1
+ = 4
+ = 4
+Acme Bread (at 6pm) = 1
+After Dinner Kitchen + Dining Clean = 2
+Bathroom - First Floor = 2
+Bathroom - Second Floor = 2
+Bathroom - Third Floor = 3
+CFS = 3
+CFS delivery putaway = 4
+Co-Cook = 5
+Co-Cook = 5
+Co-Cook = 5
+Dishes - Before Dinner = 1
+Dishes - Early Afternoon = 1
+Dishes - Evening = 2
+Dishes - Morning = 1
+Earls Delivery Putaway = 4
+Evening Sweep + Mop = 5
+Free Pile Clean = 1
+IKC = 4
+IKC = 4
+IKC = 4
+IKC = 4
+IKC = 4
+IKC = 4
+IKC = 4
+IKC = 4
+Leftovers Putaway = 3
+Living and Study Room Clean = 2
+Mail Sort + Forward = 4
+Morning/Afternoon Kitchen + Dining Clean = 3
+Noahs Bagels (before 3pm) = 1
+Nook + Shelf + Aquarium + Roof Clean = 3
+Perimeter and Roof Clean = 3
+Pots - Afternoon = 1
+Pots - Evening = 1
+Pots - Evening = 1
+Pots - Morning = 1
+Pots - Morning = 1
+Snack: General = 5
+Vacuum = 4
+[END]
+Martin, Jasmine
+5
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+[END]
+Mayorga, Joel
+5
+----++++++++++--
+-xxx--xxxxxxx---
+-xxxxxxxxxx-++--
+-xxx--xxxx--++--
+----++++++------
+----------------
+----+++++-------
+Bathroom = 2
+CO = 4
+Dishroom = 2
+Food = 4
+IKC = 2
+CFS = 4
+[END]
+McConnell, Marisa
+5
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+[END]
+Milman, Rebecca
+5
+xxxxxx++x++++++-
+xxxx++xxxx+++++-
+xxxxxx++++xxxxx-
+xxxx+++++++++++-
++++++++x+++-----
+---+++++++++----
+---++++++++++++-
+Bathroom = 3
+IKC = 2
+After Dinner Kitchen + Dining Clean = 3
+CFS = 4
+CFS delivery putaway = 4
+Co-Cook = 5
+Co-Cook = 5
+Co-Cook = 5
+Dishes - Before Dinner = 4
+Dishes - Early Afternoon = 2
+Dishes - Evening = 4
+Dishes - Morning = 4
+Earls Delivery Putaway = 4
+Evening Sweep + Mop = 2
+Free Pile Clean = 5
+IKC = 2
+IKC = 2
+IKC = 2
+IKC = 2
+IKC = 2
+IKC = 2
+IKC = 2
+IKC = 2
+Leftovers Putaway = 5
+Living and Study Room Clean = 5
+Mail Sort + Forward = 5
+Morning/Afternoon Kitchen + Dining Clean = 4
+Nook + Shelf + Aquarium + Roof Clean = 5
+Perimeter and Roof Clean = 5
+Pots - Afternoon = 1
+Pots - Evening = 1
+Pots - Evening = 1
+Pots - Morning = 1
+Pots - Morning = 1
+Snack: General = 5
+Vacuum = 3
+[END]
+Mizrahi, Nicole
+5
+xxxxxxxxxxx     
+xxxxxxxxxxxxx   
+xxxxxxxxxxx     
+xxxxxxxx        
+xxxxxxxxx       
+++++            
+++++            
+[END]
+Nelson, Mariel
+5
+                
+                
+                
+                
+                
+                
+                
+ = 5
+ = 5
+Dishes - Before Dinner = 5
+Dishes - Morning = 5
+IKC = 5
+IKC = 5
+IKC = 5
+IKC = 5
+IKC = 5
+IKC = 5
+IKC = 5
+IKC = 5
+[END]
+Nicole, Meghan
+5
+      ------++  
+   ---- ------- 
+    ----------- 
+   --------+++  
+ ----------+++  
++++     --------
+        --------
+Bathroom = 1
+CO = 1
+Food_Putaway = 1
+IKC = 1
+ = 5
+Acme Bread (at 6pm) = 5
+After Dinner Kitchen + Dining Clean = 3
+CFS delivery putaway = 1
+Co-Cook = 3
+Co-Cook = 3
+Co-Cook = 3
+Dishes - Before Dinner = 5
+Dishes - Early Afternoon = 5
+Dishes - Evening = 5
+Dishes - Morning = 5
+Earls Delivery Putaway = 1
+Evening Sweep + Mop = 2
+Free Pile Clean = 2
+Leftovers Putaway = 1
+Living and Study Room Clean = 4
+Mail Sort + Forward = 5
+Morning/Afternoon Kitchen + Dining Clean = 3
+Noahs Bagels (before 3pm) = 5
+Nook + Shelf + Aquarium + Roof Clean = 2
+Perimeter and Roof Clean = 3
+Pots - Afternoon = 1
+Pots - Evening = 1
+Pots - Evening = 1
+Pots - Morning = 1
+Pots - Morning = 1
+Vacuum = 2
+[END]
+Ramirez, Ethan
+5
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+[END]
+Reflogle, Daniel
+5
+          ++   +
+          +    +
+          +    +
+          +    +
+          +    +
++         +    +
++         +    +
+[END]
+Rosen, Annie
+5
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+[END]
+Ross, Ben
+5
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+[END]
+Sam-Vargas, Jonathan
+5
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+[END]
+Saron, Rayna
+5
+xxxxxxxxxx     -
+xxxxxxxxxxxxxxx-
+xxxxxxxxxx+  xxx
+xxxxxxxxxxxx --+
++-----++ -------
+         -------
+                
+Acme Bread (at 6pm) = 1
+After Dinner Kitchen + Dining Clean = 2
+Bathroom - First Floor = 1
+Bathroom - Second Floor = 1
+Bathroom - Third Floor = 1
+CFS = 1
+CFS delivery putaway = 5
+Co-Cook = 1
+Co-Cook = 1
+Co-Cook = 1
+Dishes - Before Dinner = 5
+Dishes - Early Afternoon = 2
+Dishes - Evening = 4
+Dishes - Morning = 1
+Earls Delivery Putaway = 4
+Evening Sweep + Mop = 2
+Free Pile Clean = 3
+IKC = 3
+IKC = 3
+IKC = 3
+IKC = 3
+IKC = 3
+IKC = 3
+IKC = 3
+IKC = 3
+Leftovers Putaway = 2
+Living and Study Room Clean = 5
+Mail Sort + Forward = 5
+Morning/Afternoon Kitchen + Dining Clean = 5
+Noahs Bagels (before 3pm) = 2
+Nook + Shelf + Aquarium + Roof Clean = 5
+Perimeter and Roof Clean = 4
+Pots - Afternoon = 2
+Pots - Evening = 3
+Pots - Evening = 3
+Pots - Morning = 1
+Pots - Morning = 1
+Snack: General = 3
+Vacuum = 5
+[END]
+Sarracino, Luigi
+5
+---+++ xx ++----
+xxxxxxxxxxx-----
+-- xxx xx++++---
+-xxxx-++++++  --
+--++++ xx-------
+---      -------
+---    +++    --
+Bathroom = 2
+Cleaning_and_Organization = 3
+CO = 2
+Dishroom = 2
+Food = 3
+Food_Pickup = 4
+Food_Putaway = 5
+IKC = 4
+ = 5
+ = 4
+ = 4
+Acme Bread (at 6pm) = 3
+After Dinner Kitchen + Dining Clean = 1
+CFS delivery putaway = 5
+Co-Cook = 1
+Co-Cook = 1
+Co-Cook = 1
+Dishes - Before Dinner = 2
+Dishes - Early Afternoon = 2
+Dishes - Evening = 2
+Dishes - Morning = 2
+Earls Delivery Putaway = 5
+Evening Sweep + Mop = 2
+Free Pile Clean = 5
+IKC = 4
+IKC = 4
+IKC = 4
+IKC = 4
+IKC = 4
+IKC = 4
+IKC = 4
+IKC = 4
+Leftovers Putaway = 4
+Living and Study Room Clean = 3
+Mail Sort + Forward = 4
+Morning/Afternoon Kitchen + Dining Clean = 2
+Noahs Bagels (before 3pm) = 5
+Nook + Shelf + Aquarium + Roof Clean = 3
+Perimeter and Roof Clean = 4
+Pots - Afternoon = 2
+Pots - Evening = 2
+Pots - Evening = 2
+Pots - Morning = 2
+Pots - Morning = 2
+Snack: General = 3
+Vacuum = 4
+[END]
+Satin, Dani
+5
+--xxx++++++++---
+xx++xx+++++  ---
+--x ++++xxxxxxxx
+xx++xx    xxxxxx
+--xx    --------
+----------------
+-------- +xxxxxx
+Bathroom = 3
+Cleaning_and_Organization = 4
+CO = 3
+Dishroom = 3
+Food = 2
+Food_Pickup = 5
+Food_Putaway = 3
+IKC = 5
+ = 4
+*IKC Manager = 2
+Acme Bread (at 6pm) = 3
+After Dinner Kitchen + Dining Clean = 2
+CFS = 3
+CFS = 3
+Dishes - Before Dinner = 2
+Dishes - Early Afternoon = 4
+Dishes - Evening = 3
+Dishes - Morning = 1
+Evening Sweep + Mop = 3
+Living and Study Room Clean = 4
+Mail Sort + Forward = 1
+Morning/Afternoon Kitchen + Dining Clean = 3
+Noahs Bagels (before 3pm) = 5
+Nook + Shelf + Aquarium + Roof Clean = 3
+Perimeter and Roof Clean = 3
+Pots - Afternoon = 4
+Pots - Evening = 2
+Pots - Evening = 2
+Pots - Morning = 1
+Pots - Morning = 1
+Vacuum = 2
+[END]
+Shalvarjian, Katie
+5
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+[END]
+Sharrar, Allison
+5
+xxxxxxxxxx------
+xxxxxxxxxx------
+xxxxxxxxxx--++++
+xxxxxxxxxx--++++
+xxxxxxxxxx--  --
+--+++++++++-----
+--+++++++++++---
+ = 2
+ = 2
+ = 1
+Acme Bread (at 6pm) = 1
+After Dinner Kitchen + Dining Clean = 1
+Bathroom - First Floor = 3
+Bathroom - Second Floor = 3
+Bathroom - Third Floor = 4
+CFS = 3
+CFS delivery putaway = 3
+Co-Cook = 5
+Co-Cook = 5
+Co-Cook = 5
+Dishes - Before Dinner = 3
+Dishes - Early Afternoon = 1
+Dishes - Evening = 3
+Dishes - Morning = 1
+Earls Delivery Putaway = 3
+Evening Sweep + Mop = 1
+Free Pile Clean = 3
+IKC = 2
+IKC = 2
+IKC = 2
+IKC = 2
+IKC = 2
+IKC = 2
+IKC = 2
+IKC = 2
+Leftovers Putaway = 3
+Living and Study Room Clean = 2
+Mail Sort + Forward = 5
+Morning/Afternoon Kitchen + Dining Clean = 1
+Noahs Bagels (before 3pm) = 1
+Nook + Shelf + Aquarium + Roof Clean = 2
+Perimeter and Roof Clean = 2
+Pots - Afternoon = 1
+Pots - Evening = 2
+Pots - Evening = 2
+Pots - Morning = 1
+Pots - Morning = 1
+Snack: General = 2
+Vacuum = 1
+[END]
+Singh, Hans
+5
+xxxxxxxxxx      
+xxxxxx   xx     
+xxxxxxxxxx      
+xxxxxx   xx     
+xxxxxxxxx       
+                
+                
+Bathroom = 1
+Cleaning_and_Organization = 2
+CO = 4
+Dishroom = 3
+Food = 2
+Food_Pickup = 2
+Food_Putaway = 3
+IKC = 5
+ = 5
+ = 2
+ = 5
+Acme Bread (at 6pm) = 2
+After Dinner Kitchen + Dining Clean = 2
+CFS = 4
+Dishes - Before Dinner = 5
+Dishes - Early Afternoon = 5
+Dishes - Evening = 5
+Dishes - Morning = 5
+Evening Sweep + Mop = 1
+Free Pile Clean = 2
+IKC = 5
+IKC = 5
+IKC = 5
+IKC = 5
+IKC = 5
+IKC = 5
+IKC = 5
+IKC = 5
+Living and Study Room Clean = 3
+Mail Sort + Forward = 3
+Morning/Afternoon Kitchen + Dining Clean = 1
+Noahs Bagels (before 3pm) = 2
+Nook + Shelf + Aquarium + Roof Clean = 1
+Perimeter and Roof Clean = 3
+Pots - Afternoon = 1
+Pots - Evening = 1
+Pots - Evening = 1
+Pots - Morning = 1
+Pots - Morning = 1
+Vacuum = 1
+[END]
+Spires, Liam
+5
+  ++ -xx-  ++   
+  -xxxx-        
+  ++ -xx-  ++   
+  -xxx-         
+     -xx-  ++   
+  ++            
+  ++            
+Bathroom = 4
+Cleaning_and_Organization = 4
+CO = 3
+Dishroom = 4
+Food = 2
+Food_Pickup = 2
+Food_Putaway = 3
+IKC = 3
+After Dinner Kitchen + Dining Clean = 4
+Bathroom - First Floor = 4
+Bathroom - Second Floor = 2
+Bathroom - Third Floor = 3
+CFS = 3
+Dishes - Before Dinner = 3
+Dishes - Early Afternoon = 3
+Dishes - Evening = 4
+Dishes - Morning = 4
+Evening Sweep + Mop = 3
+Free Pile Clean = 4
+Living and Study Room Clean = 3
+Mail Sort + Forward = 5
+Morning/Afternoon Kitchen + Dining Clean = 4
+Nook + Shelf + Aquarium + Roof Clean = 3
+Perimeter and Roof Clean = 3
+Pots - Afternoon = 3
+Pots - Evening = 4
+Pots - Evening = 4
+Pots - Morning = 4
+Pots - Morning = 4
+Vacuum = 4
+[END]
+Stewart, Brian
+5
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+[END]
+Strain, Simon
+5
+  xxxxxxx       
+   xxxxxxx      
+  xxxxxxx       
+   xxxxxxx      
+  xxxxxxx       
+    xxx   --    
+          --    
+Bathroom = 2
+Cleaning_and_Organization = 2
+CO = 5
+Dishroom = 2
+Food = 4
+Food_Pickup = 1
+Food_Putaway = 4
+IKC = 4
+Mail Sort + Forward = 3
+[END]
+Tajer, Cyrus
+5
+xxx   xx        
+xx     xxxxxx   
+  x   xxx       
+xx     xx       
+  +++ xx  ------
+  +++     ------
+  +++       ++++
+Bathroom = 1
+Cleaning_and_Organization = 3
+CO = 3
+Dishroom = 3
+Food = 4
+Food_Pickup = 1
+Food_Putaway = 5
+IKC = 3
+ = 1
+ = 3
+ = 3
+Acme Bread (at 6pm) = 1
+After Dinner Kitchen + Dining Clean = 2
+Bathroom - First Floor = 1
+Bathroom - Second Floor = 1
+Bathroom - Third Floor = 1
+CFS = 3
+CFS delivery putaway = 5
+Co-Cook = 4
+Co-Cook = 4
+Co-Cook = 4
+Dishes - Before Dinner = 1
+Dishes - Early Afternoon = 1
+Dishes - Evening = 1
+Dishes - Morning = 1
+Earls Delivery Putaway = 5
+Evening Sweep + Mop = 5
+Free Pile Clean = 3
+IKC = 3
+IKC = 3
+IKC = 3
+IKC = 3
+IKC = 3
+IKC = 3
+IKC = 3
+IKC = 3
+Leftovers Putaway = 4
+Living and Study Room Clean = 3
+Mail Sort + Forward = 3
+Morning/Afternoon Kitchen + Dining Clean = 3
+Noahs Bagels (before 3pm) = 1
+Nook + Shelf + Aquarium + Roof Clean = 5
+Perimeter and Roof Clean = 5
+Pots - Afternoon = 5
+Pots - Evening = 5
+Pots - Evening = 5
+Pots - Morning = 5
+Pots - Morning = 5
+Snack: General = 4
+Vacuum = 3
+[END]
+Vavra, Ellis
+5
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+[END]
+Wade, Kristen
+5
+xxxxxxxx++++++++
+xxxxxxxx++++++++
+xxxxxxxx++++++++
+++++++++++++++++
+++++++++++++++++
+xxxxxxx+++++++++
+xxxxxxx+++++++++
+IKC = 5
+ = 4
+Acme Bread (at 6pm) = 0
+After Dinner Kitchen + Dining Clean = 3
+Bathroom - First Floor = 1
+Bathroom - Second Floor = 1
+Bathroom - Third Floor = 1
+CFS = 0
+CFS delivery putaway = 2
+Co-Cook = 5
+Co-Cook = 5
+Co-Cook = 5
+Dishes - Before Dinner = 3
+Dishes - Early Afternoon = 3
+Dishes - Evening = 3
+Dishes - Morning = 2
+Earls Delivery Putaway = 2
+Evening Sweep + Mop = 3
+Free Pile Clean = 1
+Leftovers Putaway = 3
+Living and Study Room Clean = 1
+Mail Sort + Forward = 3
+Morning/Afternoon Kitchen + Dining Clean = 4
+Noahs Bagels (before 3pm) = 0
+Nook + Shelf + Aquarium + Roof Clean = 2
+Perimeter and Roof Clean = 2
+Pots - Afternoon = 0
+Pots - Evening = 0
+Pots - Evening = 0
+Pots - Morning = 0
+Pots - Morning = 0
+Snack: General = 5
+Vacuum = 3
+[END]
+Wagner, Emily
+5
+---xxxxxxxx+++++
+xxxxxxxxxx-+++++
+----xxxxx-++++++
+xxxxxxxxxx++++++
+-xxxxxxxxxxx----
+----------------
+----------------
+Bathroom = 2
+Cleaning_and_Organization = 4
+CO = 3
+Dishroom = 4
+Food = 3
+Food_Pickup = 3
+Food_Putaway = 3
+IKC = 5
+ = 3
+*IKC Manager = 3
+CFS = 3
+CFS = 3
+[END]
+Wang, Stephanie
+5
+xxx--+++xxx+++--
+xxx--+++++++++--
+xxxxxxxxxxxx----
+xxx+++++++xxxxx-
+xxx--++++++-----
+xxx++++++++-----
+xxx+++++++------
+CO = 2
+Dishroom = 1
+Food = 1
+Food_Pickup = 1
+IKC = 1
+After Dinner Kitchen + Dining Clean = 4
+Bathroom - First Floor = 1
+Bathroom - Second Floor = 3
+Bathroom - Third Floor = 3
+CFS delivery putaway = 4
+Earls Delivery Putaway = 4
+Evening Sweep + Mop = 1
+Free Pile Clean = 1
+Leftovers Putaway = 5
+Living and Study Room Clean = 5
+Mail Sort + Forward = 5
+Morning/Afternoon Kitchen + Dining Clean = 5
+Nook + Shelf + Aquarium + Roof Clean = 5
+Perimeter and Roof Clean = 5
+Vacuum = 3
+[END]
+Wartzman, Nathaniel
+5
+-- +xx+xxx      
+-- xxxx +       
+-- +x+ xx       
+-- +xx++        
+--x+++ xxx      
+-- +   +        
+-- +   +        
+Bathroom = 3
+Cleaning_and_Organization = 3
+CO = 3
+Dishroom = 2
+Food = 3
+Food_Pickup = 3
+Food_Putaway = 3
+IKC = 5
+ = 2
+ = 5
+ = 5
+Acme Bread (at 6pm) = 3
+After Dinner Kitchen + Dining Clean = 2
+CFS delivery putaway = 3
+Dishes - Before Dinner = 2
+Dishes - Early Afternoon = 2
+Dishes - Evening = 2
+Dishes - Morning = 2
+Earls Delivery Putaway = 3
+Evening Sweep + Mop = 2
+Free Pile Clean = 3
+IKC = 5
+IKC = 5
+IKC = 5
+IKC = 5
+IKC = 5
+IKC = 5
+IKC = 5
+IKC = 5
+Leftovers Putaway = 3
+Living and Study Room Clean = 3
+Mail Sort + Forward = 3
+Morning/Afternoon Kitchen + Dining Clean = 3
+Noahs Bagels (before 3pm) = 4
+Nook + Shelf + Aquarium + Roof Clean = 3
+Perimeter and Roof Clean = 3
+Pots - Afternoon = 1
+Pots - Evening = 1
+Pots - Evening = 1
+Pots - Morning = 1
+Pots - Morning = 1
+Vacuum = 5
+[END]
+Weaver, David
+5
+-xxxx      - ---
+xx-      xx- ---
+-xxxx    xx- ---
+xx-      xx- ---
+--  x      -----
+--         -----
+--         -----
+Bathroom = 3
+Cleaning_and_Organization = 4
+CO = 5
+Dishroom = 3
+Food = 3
+Food_Pickup = 4
+Food_Putaway = 4
+IKC = 3
+ = 5
+ = 3
+ = 3
+Acme Bread (at 6pm) = 3
+After Dinner Kitchen + Dining Clean = 2
+Bathroom - First Floor = 3
+Bathroom - Second Floor = 3
+Bathroom - Third Floor = 3
+CFS = 5
+CFS delivery putaway = 4
+Co-Cook = 3
+Co-Cook = 3
+Co-Cook = 3
+Dishes - Before Dinner = 2
+Dishes - Early Afternoon = 3
+Dishes - Evening = 2
+Dishes - Morning = 2
+Earls Delivery Putaway = 3
+Evening Sweep + Mop = 3
+Free Pile Clean = 4
+IKC = 3
+IKC = 3
+IKC = 3
+IKC = 3
+IKC = 3
+IKC = 3
+IKC = 3
+IKC = 3
+Leftovers Putaway = 3
+Living and Study Room Clean = 3
+Mail Sort + Forward = 3
+Morning/Afternoon Kitchen + Dining Clean = 3
+Noahs Bagels (before 3pm) = 4
+Nook + Shelf + Aquarium + Roof Clean = 4
+Perimeter and Roof Clean = 4
+Pots - Afternoon = 3
+Pots - Evening = 2
+Pots - Evening = 2
+Pots - Morning = 2
+Pots - Morning = 2
+Snack: General = 3
+Vacuum = 4
+[END]
+Weiherer, Lauren
+5
+                
+                
+                
+                
+                
+                
+                
+[END]
+Wertman, Holly
+5
+----------------
+-xx++xxx++xxxx++
+-+xxx+++++++++++
+-xx++xxxxxx+++++
+----------------
+----------------
+----------------
+ = 3
+ = 3
+ = 5
+Acme Bread (at 6pm) = 5
+After Dinner Kitchen + Dining Clean = 4
+Bathroom - First Floor = 3
+Bathroom - Second Floor = 3
+Bathroom - Third Floor = 3
+CFS = 2
+CFS delivery putaway = 3
+Co-Cook = 4
+Co-Cook = 4
+Co-Cook = 4
+Dishes - Before Dinner = 3
+Dishes - Early Afternoon = 3
+Dishes - Evening = 3
+Dishes - Morning = 3
+Earls Delivery Putaway = 3
+Evening Sweep + Mop = 4
+Free Pile Clean = 5
+IKC = 3
+IKC = 3
+IKC = 3
+IKC = 3
+IKC = 3
+IKC = 3
+IKC = 3
+IKC = 3
+Leftovers Putaway = 3
+Living and Study Room Clean = 4
+Mail Sort + Forward = 5
+Morning/Afternoon Kitchen + Dining Clean = 4
+Noahs Bagels (before 3pm) = 5
+Nook + Shelf + Aquarium + Roof Clean = 4
+Perimeter and Roof Clean = 4
+Pots - Afternoon = 3
+Pots - Evening = 3
+Pots - Evening = 3
+Pots - Morning = 3
+Pots - Morning = 3
+Snack: General = 5
+Vacuum = 3
+[END]
+Williams, Annika
+5
+ xxxxxxxxxxxxxx 
+xxxxx    xxxxx  
+ xxxxxxx        
+xxxxxxxxxxxx    
+ xxxxxxx        
+                
+ --------       
+Bathroom = 1
+CO = 1
+Dishroom = 3
+Food_Pickup = 2
+Food_Putaway = 4
+IKC = 4
+After Dinner Kitchen + Dining Clean = 4
+Co-Cook = 5
+Co-Cook = 5
+Co-Cook = 5
+Evening Sweep + Mop = 4
+Free Pile Clean = 2
+Living and Study Room Clean = 4
+Mail Sort + Forward = 4
+Morning/Afternoon Kitchen + Dining Clean = 4
+Nook + Shelf + Aquarium + Roof Clean = 4
+Perimeter and Roof Clean = 3
+Snack: General = 3
+Vacuum = 2
+[END]
+Xu, Yao
+5
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+++++++++++++++++
+[END]
