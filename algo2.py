@@ -135,6 +135,7 @@ class Person(object):
 			g = line.split(" = ")
 			if len(g) > 1:
 				self.pref_nums[g[0]] = int(g[1])
+		self.pref_nums[' '] = 3
 
 	def time_pref(self, day, time):
 		# Takes a day in the format [M|T|W|Th|F] and a military hour btw 8 (8 am) and 23 (11:00pm)
@@ -143,19 +144,35 @@ class Person(object):
 		assert (day.strip(),time) in self.sched_nums, "time_pref: Invalid Day or Time: "+day+" "+str(time)
 		return self.sched_nums[(day.strip(),time)]
 
-	def shift_type_pref(self, shift_type):
+	def shift_type_pref(self, shift_type, shift_cat):
 		# Takes the name of a type of shift as a string.
 		# returns a number [1-5] representing this person relative preference to this shift
+		# defauts to 3 if there is no preference data for this type/cat
+
+		# give type precedence over category:
 		if shift_type in self.pref_nums:
 			return self.pref_nums[shift_type]
+		elif shift_cat in self.pref_nums:
+			return self.pref_nums[shift_cat]
 		else:
 			return 3
 
 	def shift_pref(self, workshift):
 		# Given a workshift object determines this person's relative preference towards it.
 		# return value is a number in [0, 7.5] ie [1*0, 5*1.5]
-		tp = max([self.time_pref(workshift.day, hr) for hr in range(workshift.time, workshift.end_time)])       # time pref
-		wp = self.shift_type_pref(workshift.type)                # type pref
+
+		# compute the time pref of all possible times that this workshift can be done, and take the maximum
+		# tp = max([min([self.time_pref(workshift.day, hr)]) for start in range(workshift.time, workshift.end_time)])       # time pref
+		tp = 0
+		for start_hr in range(workshift.time, workshift.end_time):
+			# time preference starting at start_hr will be the minimu of the time slots that the shift takes
+			try:
+				t = min([self.time_pref(workshift.day, hr) for hr in range(start_hr, start_hr + int(ceil(workshift.hours))) if start_hr + workshift.hours < 24])
+			except ValueError:
+				pass
+			if t > tp:
+				tp = t
+		wp = self.shift_type_pref(workshift.type, workshift.cat) # type pref
 		return tp * wp                                           # shift preference = (time pref)*(type pref)
 
 	def available(self, day, time):
@@ -221,13 +238,14 @@ class Shift(object):
 
 	blank = None
 
-	def __init__(self, type, day, time,etime, hours):
+	def __init__(self, type, day, time,etime, hours, cat):
 		self.type = type                                         # kind of workshift; should be in shift_types
 		self.day = day                                           # day of the week ie [M|T|W|Th|F|S|Su]
 		self.time = time                                         # military start time of the start of the workshift; should be between 8 (am) and 23 (11:00pm)
 		self.end_time = etime                                  # end time of workshift 
 		assert self.time >= 8 and self.time <= 23, "Shift: Invalid Time: " + str(self.time)
 		self.hours = hours                                       # Length of the shift in hours   
+		self.cat = cat                                           # Category: ie Dishroom, etc.
 
 	def __eq__(self, other):
 		# overrides default == behavior.  Shifts are equal iff:
@@ -261,16 +279,18 @@ class Shift(object):
 				etime = 24 if "*" in sect[3] else int(sect[3])
 				hrs = float(sect[4])
 				people_needed = int(sect[5])      # Create a seperate shift for each person needed
+				cat = sect[6]
 				for day in days:
 					for _ in range(people_needed):
-						shifts.append(Shift(type_, day, time, etime, hrs))
-		Shift.blank = Shift("Vacuum", "T",22,23, 0)
+						shifts.append(Shift(type_, day, time, etime, hrs, cat))
+		Shift.blank = Shift("Vacuum", "T",22,23, 0,"Vaccuum")
 		return shifts
 
 # LOAD DATA #
 
 # load the people
 people = Person.load(data_path + os.sep + "people.txt")
+assert len(people) > 0, "No People Loaded: empty people.txt file?"
 
 #load the shifts
 shifts = Shift.load(data_path + os.sep + "shifts.csv")

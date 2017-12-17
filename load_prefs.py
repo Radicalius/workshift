@@ -12,7 +12,7 @@ def convert_time(time):
 	try:
 		if time.endswith("am"):
 			t = time.split(" ")[0]
-			return t if t!="12" else "24"
+			return t if t!="24" else "12"
 		else:
 			return str(int(time.split(" ")[0])%12 + 12)
 	except:
@@ -43,7 +43,7 @@ for entry in table.split("\n"):
 	line = [re.split("""[>'"]""", e)[1] for e in values if len(e) > 0][1:]
 	if len(line) > 1:
 		line[0] = line[0].strip().replace("&#039;","")
-		shifts.write(", ".join([line[0],"|".join([days[i-2] for i in range(2,10) if line[i]!="XXXXX"]), convert_time(line[10]), convert_time(line[11]), line[1], "1"]) + "\n")
+		shifts.write(", ".join([line[0],"|".join([days[i-2] for i in range(2,10) if line[i]!="XXXXX"]), convert_time(line[10]), convert_time(line[11]), line[1], "1", line[12]]) + "\n")
 
 people = open("data/people.txt","w")
 

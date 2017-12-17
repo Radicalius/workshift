@@ -8,7 +8,7 @@ var gtfact;
 var btfact;
 var log;
 
-var shifts = [["'Pots (Sample)'",2, "T|Th", 13, 14, 2]];
+var shifts = [["'Pots (Sample)'",2, "T|Th", 13, 14, 2, "Dishroom"]];
 var people = [["'The Goat (Sample)'", 5, "", "xxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxxx"]]
 
 // onload: load elements
@@ -27,10 +27,10 @@ window.onload = function(){
 
 // generates tables for people and shift data
 function createForms(){
-	var html = "<table style='width:50%'><tr><b><td>Type</td><td>Day(s)</td><td>Start Time</td><td>End Time</td><td>Hours</td><td>Number of People</td></b></tr>";
+	var html = "<table style='width:50%'><tr><b><td>Type</td><td>Day(s)</td><td>Start Time</td><td>End Time</td><td>Hours</td><td>Number of People</td><td>Category</td></b></tr>";
 	for (var i = 0; i < shifts.length; i++){
 		html += "<tr>"
-		for (var j = 0; j < 6; j++){
+		for (var j = 0; j < 7; j++){
 			html += '<td><input type=text size=10 id="shift'+i+':'+j+'" value="' + shifts[i][j] + '" /></td>\n';
 		}
 		html += '<td><button type=button onclick="javascript:removeShift('+i+')">Remove</button></td>';
@@ -58,7 +58,7 @@ function createForms(){
 
 // adds a blank shift to the shifts table
 function addShift(){
-	shifts.push([" ",0, " ", 0, 0, 1]);
+	shifts.push([" ",0, " ", 0, 0, 1, " "]);
 	createForms();
 }
 
@@ -139,7 +139,9 @@ function loadPeople(text){
 			person.push(lines[1]);
 			var pref="";
 			for (var k = 9; k < lines.length; k++){
-				pref += lines[k]+"\n";
+				if (lines[k].length > 3){
+					pref += lines[k]+"\n";
+				}
 			}
 			person.push(pref);
 			var sched = "";
@@ -199,7 +201,7 @@ function GO(){
 	updateValues();
 	var shiftfile = "";
 	for (var i = 0; i < shifts.length; i++){
-		for (var j = 0; j < 6; j++){
+		for (var j = 0; j < 7; j++){
 			shiftfile += shifts[i][j]+",";
 		}
 		shiftfile+="\n";
