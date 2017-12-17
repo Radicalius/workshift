@@ -121,5 +121,6 @@ class SortingHatRequestHandler(BaseHTTPRequestHandler):
 
 # Start Server
 server = HTTPServer(("", port), SortingHatRequestHandler)
-server.socket = ssl.wrap_socket(server.socket, certfile=config["CERTIFICATE"], server_side=True)
+if os.path.exists(config["CERTIFICATE"]):
+	server.socket = ssl.wrap_socket(server.socket, certfile=config["CERTIFICATE"], server_side=True)
 server.serve_forever()
