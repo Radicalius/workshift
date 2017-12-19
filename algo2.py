@@ -58,7 +58,8 @@ def check_hours(people):
 	# counts the number of people who have incorrect total time assignments
 	z = 0
 	for p in people:
-		if p.assigned_hours != p.hours:
+		assigned_hours = sum([w.hours for w in p.shifts])
+		if assigned_hours != p.hours:
 			z += 1
 	return z
 
@@ -84,6 +85,19 @@ def swap(listA,itemA,listB,itemB):
 	listB.append(itemA)
 	listB.remove(itemB)
 	listA.append(itemB)
+
+def convert_time(time):
+	# takes an integer representing a time in 24 hour format
+	# converts it to am/pm
+	# note that 12:00 am is midnight, and 12:00 pm is noon
+	if time < 12:
+		return "{0}:00 am".format(time)
+	elif time > 12 and time < 24:
+		return "{0}:00 pm".format(time-12)
+	elif time == 12:
+		return "12:00 pm"
+	else:
+		return "12:00 am"
 
 # CLASSES #
 
@@ -161,17 +175,28 @@ class Person(object):
 		# Given a workshift object determines this person's relative preference towards it.
 		# return value is a number in [0, 7.5] ie [1*0, 5*1.5]
 
-		# compute the time pref of all possible times that this workshift can be done, and take the maximum
-		# tp = max([min([self.time_pref(workshift.day, hr)]) for start in range(workshift.time, workshift.end_time)])       # time pref
+		# compute the time pref of all possible times that this workshift could be done, and take the maximum
 		tp = 0
 		for start_hr in range(workshift.time, workshift.end_time):
-			# time preference starting at start_hr will be the minimu of the time slots that the shift takes
-			try:
-				t = min([self.time_pref(workshift.day, hr) for hr in range(start_hr, start_hr + int(ceil(workshift.hours))) if start_hr + workshift.hours < 24])
-			except ValueError:
-				pass
-			if t > tp:
-				tp = t
+			# time preference starting at start_hr will be the minimum of the time slots that the shift takes up
+			# ie the preference rating is the preference of the least desirable hour during the shift
+			if start_hr + workshift.hours <= workshift.end_time:
+				try:
+					t = min([self.time_pref(workshift.day, hr) for hr in range(start_hr, start_hr + int(ceil(workshift.hours))) if start_hr + workshift.hours < 24])
+
+					# ensure there are no conflicting shifts during this time frame
+					for shift in self.shifts:
+						if shift != workshift and shift.day == workshift.day:
+							for shift_time in range(shift.time, shift.time + int(ceil(shift.hours))):
+								for ws_time in range(start_hr, start_hr + int(ceil(workshift.hours))):
+									if ws_time == shift_time:
+										t = 0
+					if t > tp:
+						tp = t
+
+				except ValueError:
+					pass
+			
 		wp = self.shift_type_pref(workshift.type, workshift.cat) # type pref
 		return tp * wp                                           # shift preference = (time pref)*(type pref)
 
@@ -445,6 +470,48 @@ print "People with shift schedule conflicts:", check_zeros(people)
 print "People with incorrect number of hours:", check_hours(people)
 print "Optimality: ", avg_optimality(people)
 
+# Print Error Report
+
+if check_zeros(people) > 0 or check_hours(people) > 0:
+	print "--------------------------------------------------"
+	print "ERRORS:"
+	for p in people:
+		for ws in p.shifts:
+			if p.shift_pref(ws) == 0:
+				print "Scheduling Error: {0} {1} {2}".format(p.name, ws.type, ws.time)
+
+# Write master log (for debugging purposes)
+
+f = open(data_path + os.sep + "log.html","w")
+shift_types = {w.type for w in shifts}
+f.write("<h1>Master Log</h1>")
+f.write("<table border=1><tr><td>Shift</td><td>Monday</td><td>Tuesday</td><td>Wednesday</td><td>Thursday</td><td>Friday</td><td>Saturday</td><td>Sunday</tr>")
+for w in shift_types:
+	f.write("<tr><td>"+w+"</td>")
+	assigned = ["<td>"]*7
+	for person in people:
+		for shift in person.shifts:
+			if shift.type == w:
+				assigned[day_desc.index(shift.day.strip())] += person.name + " " + str(convert_time(shift.time) + " ({0})".format(person.shift_pref(shift))) + "<br/>"
+	assigned = [a+"</td>" for a in assigned]
+	f.write("".join(assigned) + "</tr>")
+f.write("</table>")
+for person in people:
+	f.write("<h2>{0} ({1})</h2><br/>".format(person.name, sum([w.hours for w in person.shifts])))
+	f.write("<table width=100% border=1><tr>"+"".join(["<td>{0}</td>".format(i) for i in range(8,24)])+"</tr>")
+	for day in day_desc:
+		f.write("<tr>")
+		for hour in range(8,24):
+			f.write("<td>{0}<br/>".format(person.time_pref(day,hour)))
+			for w in person.shifts:
+				if w.time <= hour and hour < w.time+w.hours and w.day.strip() == day:
+					f.write("<font color=#FF0000 >" if person.shift_pref(w) == 0 else "<font>")
+					f.write(str(w)+"</font><br/>")
+			f.write("</td>")
+		f.write("</tr>")
+	f.write("</table>")
+f.close()
+
 # Write matching to file in csv format
 # Format:
 # 	Name,shift1.type,shift1.day,shift1.time,shift2.type,shift2.day,shift2.time ...
@@ -453,9 +520,14 @@ print "Optimality: ", avg_optimality(people)
 # 	Radicalius, Pots, Th, 19, Bathroom Clean, Tu, 9
 
 f = open(data_path + os.sep + "res.csv", "w")
-for person in people:
-	f.write(person.name+",")
-	for i in person.shifts:
-		f.write(i.type+","+i.day+","+str(i.time)+",")
-	f.write("\n")
+shift_types = {w.type for w in shifts}
+f.write("Shift\tMonday\tTuesday\tWednesday\tThursday\tFriday\tSaturday\tSunday\n")
+for w in shift_types:
+	f.write(w+"\t")
+	assigned = [""]*7
+	for person in people:
+		for shift in person.shifts:
+			if shift.type == w:
+				assigned[day_desc.index(shift.day.strip())] += person.name + " " + str(convert_time(shift.time)) + "; "
+	f.write("\t".join(assigned) + "\n")
 f.close()
