@@ -514,7 +514,8 @@ f.close()
 
 # Write matching to file in csv format
 # Format:
-# 	Name,shift1.type,shift1.day,shift1.time,shift2.type,shift2.day,shift2.time ...
+# 	Shift name, Monday, Tuesday, ..., Sunday
+# 	Monday, ... Sunday contain the workshifters assigned on that day and the time of the assignment 
 #   Note that times are in 24 hour time format
 # Example:
 # 	Radicalius, Pots, Th, 19, Bathroom Clean, Tu, 9
@@ -524,10 +525,11 @@ shift_types = {w.type for w in shifts}
 f.write("Shift\tMonday\tTuesday\tWednesday\tThursday\tFriday\tSaturday\tSunday\n")
 for w in shift_types:
 	f.write(w+"\t")
-	assigned = [""]*7
+	assigned = ["'"]*7
 	for person in people:
 		for shift in person.shifts:
 			if shift.type == w:
-				assigned[day_desc.index(shift.day.strip())] += person.name + " " + str(convert_time(shift.time)) + "; "
+				assigned[day_desc.index(shift.day.strip())] += person.name + " " + str(convert_time(shift.time)) + "\n"
+	assigned = [a+"'" for a in assigned]
 	f.write("\t".join(assigned) + "\n")
 f.close()

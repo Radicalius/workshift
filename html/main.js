@@ -166,21 +166,8 @@ function httpGet(theUrl)
 
 // loads results at res.csv into on page table
 function loadResults(){
-	var res = httpGet("res.csv");
-	var lines = res.split("\n");
-	var html = "<table border=1>";
-	for (var i = 0; i < lines.length; i++){
-		html += "<tr>";
-		var cols = lines[i].split(",");
-		html += "<td>"+cols[0]+", "+cols[1]+"</td>";
-		for (var j = 2; j+3 < cols.length; j+=3){
-			if (j < cols.length){
-				html+="<td>"+cols[j]+" "+cols[j+1]+" "+cols[j+2]+"</td>";
-			}
-		}
-		html += "</tr>";
-	}
-	html += "</table>";
+	var res = httpGet("/log.html");
+	var html = res.split("</h1>")[1].split("<h2>")[0];
 	results.innerHTML = html;
 }
 

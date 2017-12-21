@@ -39,7 +39,7 @@ class SortingHatRequestHandler(BaseHTTPRequestHandler):
 		# self.path is the relative url requested
 
 		# check to see that the requested url is valid
-		if self.path in ["/", "/main.js","/res.csv","/shifts.csv","/people.txt"] or self.path.startswith("/query") or self.path.startswith("/sync"):
+		if self.path in ["/", "/main.js","/res.csv","/shifts.csv","/people.txt","/log.html"] or self.path.startswith("/query") or self.path.startswith("/sync"):
 		
 			# Inform the client that the request was successful and we are sending HTML
 			self.send_response(200)
@@ -49,7 +49,7 @@ class SortingHatRequestHandler(BaseHTTPRequestHandler):
 			if self.path == "/":
 
 				# send the contents of html/index.html
-				self.send_page("html" + os.sep+"index.html")
+				self.send_page("html" + os.sep + "index.html")
 
 			elif self.path == "/res.csv":
 
@@ -66,6 +66,11 @@ class SortingHatRequestHandler(BaseHTTPRequestHandler):
 				# send contents of /data/res.csv (a little hacky :))
 				self.send_page(config["DATA"] + os.sep + "people.txt")
 
+			elif self.path == "/log.html":
+
+				# send contents of /data/res.csv (a little hacky :))
+				self.send_page(config["DATA"] + os.sep + "log.html")
+
 
 			elif self.path.startswith("/query"):   # job request
 
@@ -81,8 +86,8 @@ class SortingHatRequestHandler(BaseHTTPRequestHandler):
 				shifts.write(urllib.unquote(args["shifts"]))
 				shifts.close()
 
-				output = os.popen(config["PYTHON"] + " algo2.py 2>&1").read()                         # connect and read the output from the algorithym
-				output = "<br/>"+output.replace("\n","<br/>")
+				inp,output,error = os.popen3(config["PYTHON"] + " algo2.py")                         # connect and read the output from the algorithym
+				output = "<br/>"+(output.read()+error.read()).replace("\n","<br/>")
 				self.wfile.write(output)                                            # then send to client
 
 			elif self.path.startswith("/sync"):                                     # user is requesting to grab preferences from bsc.coop
