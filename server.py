@@ -12,6 +12,7 @@
 
 import BaseHTTPServer,sys, urllib, os,ssl
 from BaseHTTPServer import *
+from subprocess import Popen, PIPE
 
 # Holds values from config file
 config = {}
@@ -19,8 +20,8 @@ config = {}
 # Load variables from config file
 conf = open("config"+os.sep+"config.cfg","r")
 for line in conf:
-	if ":" in line:
-		vals = line.split(":")
+	if ";" in line:
+		vals = line.split(";")
 		config[vals[0].strip()] = vals[1].strip()
 
 try:
@@ -40,7 +41,7 @@ class SortingHatRequestHandler(BaseHTTPRequestHandler):
 
 		# check to see that the requested url is valid
 		if self.path in ["/", "/main.js","/res.csv","/shifts.csv","/people.txt","/log.html"] or self.path.startswith("/query") or self.path.startswith("/sync"):
-		
+
 			# Inform the client that the request was successful and we are sending HTML
 			self.send_response(200)
 			self.send_header('Content-type', 'text/html')
@@ -100,7 +101,9 @@ class SortingHatRequestHandler(BaseHTTPRequestHandler):
 				house = args[2].split("=")[1]
 
 				# run load_prefs script
-				output = os.popen(config["PYTHON"] + " load_prefs.py '"+urllib.unquote(user)+"' '"+urllib.unquote(pswd)+"' '"+urllib.unquote(house)+"'").read()
+				process = Popen([config["PYTHON"], "load_prefs.py", urllib.unquote(user), urllib.unquote(pswd), urllib.unquote(house)], stdout=PIPE, stderr=PIPE)
+				output, error = process.communicate()
+				print error
 				self.wfile.write(output)
 
 			else:

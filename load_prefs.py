@@ -1,12 +1,20 @@
-import sys, requests,getpass,re
+import sys, requests,getpass,re, os
 
 #user = raw_input("Login: ")
 #pswd = getpass.getpass("Password: ")
-user = sys.argv[1]
-pswd = sys.argv[2]
-house = sys.argv[3]
+user = sys.argv[1].replace("'","")
+pswd = sys.argv[2].replace("'","")
+house = sys.argv[3].replace("'","")
 
 days = ["M|T|W|Th|F|S|Su","M","T","W","Th","F","S","Su"]
+
+# Load variables from config file
+config = {}
+conf = open("config"+os.sep+"config.cfg","r")
+for line in conf:
+	if ";" in line:
+		vals = line.split(";")
+		config[vals[0].strip()] = vals[1].strip()
 
 def convert_time(time):
 	try:
@@ -18,8 +26,14 @@ def convert_time(time):
 	except:
 		return "*"
 
-login = requests.post("https://workshift.bsc.coop/{0}/admin/index.php".format(house), data={"officer_name":user,"officer_passwd":pswd})
+try:
+	login = requests.post("https://workshift.bsc.coop/{0}/admin/index.php".format(house), data={"officer_name":user,"officer_passwd":pswd})
+except:
+	print "<font color=#FF0000>Unable to Connect to BSC Server<br/>Check your internet connection and try again<br/>Not Yet Synced</font>"
+	sys.exit(1)
+
 if login.status_code != 200:
+        print login.status_code
 	print "<font color=#FF0000>Unable to Connect to BSC Server<br/>Check the availability of workshift.bsc.org and try again<br/>Not Yet Synced</font>"
 	sys.exit(1)
 cookies = login.cookies
@@ -34,7 +48,7 @@ if names[0] == "":
 	print "<font color=#FF0000>Unable to Connect to BSC Server<br/>Check your credentials and try again<br/>Not Yet Synced</font color=#FF0000>"
 	sys.exit(2)
 
-shifts = open("data/shifts.csv","w")
+shifts = open(config["DATA"] + os.sep + "shifts.csv","w")
 
 shift_table = requests.get("https://workshift.bsc.coop/{0}/admin/master_shifts.php".format(house),cookies=cookies).text
 table = shift_table.split("""<table id="bodytable" cellspacing='0'>\n<thead>""")[1].split("</tbody></table>")[0]
@@ -45,7 +59,7 @@ for entry in table.split("\n"):
 		line[0] = line[0].strip().replace("&#039;","")
 		shifts.write(", ".join([line[0],"|".join([days[i-2] for i in range(2,10) if line[i]!="XXXXX"]), convert_time(line[10]), convert_time(line[11]), line[1], "1", line[12]]) + "\n")
 
-people = open("data/people.txt","w")
+people = open(config["DATA"] + os.sep + "people.txt","w")
 
 for name in names:
 	prefs = []

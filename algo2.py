@@ -22,8 +22,8 @@ from math import ceil
 config = {}
 conf = open("config"+os.sep+"config.cfg","r")
 for line in conf:
-	if ":" in line:
-		vals = line.split(":")
+	if ";" in line:
+		vals = line.split(";")
 		config[vals[0].strip()] = vals[1].strip()
 
 # relative path to directory containing person.txt, and shifts.txt

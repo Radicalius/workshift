@@ -31,15 +31,15 @@ done
 # if none was found...
 if [ -z $inst ]; then
 	echo "Python not found; please install python (2.7.12 <= version < 3.0.0) and try again\nNote: On ubuntu run 'sudo apt-get install python'" >2
-	echo "PYTHON: NONE\n"
+	echo "PYTHON; NONE\n"
 else
-	echo "PYTHON: $inst"
+	echo "PYTHON; $inst"
 fi
 
 # Defaults:
-echo "DATA: `pwd`/data"
-echo "CERTIFICATE: `pwd`/config/cert.pem"
-echo "PORT: 8000"
+echo "DATA; `pwd`/data"
+echo "CERTIFICATE; `pwd`/config/cert.pem"
+echo "PORT; 8000"
 
 } > config/config.cfg
 
