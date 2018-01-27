@@ -38,7 +38,7 @@ day_desc = ["M","T","W","Th","F","S","Su"]
 #	- decreased desireability from an undesireable time to work
 #  ' ' constant 1 for same desireability for neutral time
 #   x constant 0 desireability because the person cannot work at that time
-pref_mult = {'+':1.5, '-':0.5, ' ':1.0, 'x':0}
+pref_mult = {'+':float(sys.argv[1]), '-':float(sys.argv[2]), ' ':1.0, 'x':0}
 
 # timeout for stage 1 in iterations
 timeout = 100000
@@ -217,6 +217,8 @@ class Person(object):
 	def combo_pref(self, combo):
 		# finds the average rating of shifts in combo
 		score = sum([self.shift_pref(shift) for shift in combo])
+		if 0 in [self.shift_pref(shift) for shift in combo]:
+			return 0
 		return score / len(combo)
 
 	def find_combos(self):
@@ -239,6 +241,7 @@ class Person(object):
 
 	def add_shift(self, shift):
 		# add shift to curently assigned workshifts
+		assert shift not in self.shifts, "Shift already in list"
 		self.shifts.append(shift)
 		self.assigned_hours += shift.hours
 		unassigned.remove(shift)
@@ -263,14 +266,15 @@ class Shift(object):
 
 	blank = None
 
-	def __init__(self, type, day, time,etime, hours, cat):
+	def __init__(self, type, day, time,etime, hours, cat, id=0):
 		self.type = type                                         # kind of workshift; should be in shift_types
-		self.day = day                                           # day of the week ie [M|T|W|Th|F|S|Su]
+		self.day = day.strip()                                   # day of the week ie [M|T|W|Th|F|S|Su]
 		self.time = time                                         # military start time of the start of the workshift; should be between 8 (am) and 23 (11:00pm)
 		self.end_time = etime                                  # end time of workshift 
 		assert self.time >= 8 and self.time <= 23, "Shift: Invalid Time: " + str(self.time)
 		self.hours = hours                                       # Length of the shift in hours   
 		self.cat = cat                                           # Category: ie Dishroom, etc.
+		self.id = id                                             # used to differentiate IKC positions
 
 	def __eq__(self, other):
 		# overrides default == behavior.  Shifts are equal iff:
@@ -279,11 +283,14 @@ class Shift(object):
 		#	- are at the same time
 		if other == None:
 			return False
-		return self.day == other.day and self.time == other.time and self.type == other.type
+		return self.day == other.day and self.time == other.time and self.type == other.type and self.id == other.id
 
 	def __str__(self):
 		# so that shift objects are printed in a human readable way for debugging purposes
 		return "{0}:{1}:{2}".format(self.type, self.day, self.time)
+
+	def copy(self):
+		return Shift(self.type, self.day, self.time, self.end_time, self.hours, self.cat, self.id)
 
 	def __repr__(self):
 		# so that lists of shift objects are printed using __str__
@@ -306,8 +313,8 @@ class Shift(object):
 				people_needed = int(sect[5])      # Create a seperate shift for each person needed
 				cat = sect[6]
 				for day in days:
-					for _ in range(people_needed):
-						shifts.append(Shift(type_, day, time, etime, hrs, cat))
+					for i in range(people_needed):
+						shifts.append(Shift(type_, day, time, etime, hrs, cat, id=i))
 		Shift.blank = Shift("Vacuum", "T",22,23, 0,"Vaccuum")
 		return shifts
 
@@ -411,12 +418,20 @@ for personA in people:
 					for combB in personB.combos[hours/100.]:
 						if personB.combo_pref(combA) + personA.combo_pref(combB) > personA.combo_pref(combA) + personB.combo_pref(combB):
 							if combA in personA.combos[hours/100.] and combB in personB.combos[hours/100.]:
-								personA.rm_combo(combA, hours/100.)
-								personB.add_combo(combA, hours/100.)
-								personB.rm_combo(combB, hours/100.)
-								personA.add_combo(combB, hours/100.)
-								personA.find_combos()
-								personB.find_combos()
+								safe = True
+								for i in combB:
+									if i in personA.shifts:
+										safe = False
+								for i in combA:
+									if i in personB.shifts:
+										safe = False
+								if safe:
+ 									personA.rm_combo(combA, hours/100.)
+									personB.add_combo(combA, hours/100.)
+									personB.rm_combo(combB, hours/100.)
+									personA.add_combo(combB, hours/100.)
+									personA.find_combos()
+									personB.find_combos()
 								
 print "STAGE 2 COMPLETE"
 print "Assignment Time Errors:", check_hours(people)

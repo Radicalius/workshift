@@ -87,7 +87,7 @@ class SortingHatRequestHandler(BaseHTTPRequestHandler):
 				shifts.write(urllib.unquote(args["shifts"]))
 				shifts.close()
 
-				inp,output,error = os.popen3(config["PYTHON"] + " algo2.py")                         # connect and read the output from the algorithym
+				inp,output,error = os.popen3(config["PYTHON"] + " algo2.py "+args["gtf"]+" "+args["btf"]) # connect and read the output from the algorithym
 				output = "<br/>"+(output.read()+error.read()).replace("\n","<br/>")
 				self.wfile.write(output)                                            # then send to client
 
