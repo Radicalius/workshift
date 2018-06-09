@@ -1,1 +1,1 @@
-web: python2 server.py 80
+web: python2 server.py $PORT
