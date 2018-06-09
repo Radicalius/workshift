@@ -25,7 +25,10 @@ for line in conf:
 		config[vals[0].strip()] = vals[1].strip()
 
 try:
-	port = int(config["PORT"])
+	if config["PORT"] != "$PORT":
+		port = int(config["PORT"])
+	else:
+		port = int(sys.argv[1])
 except:
 	print "Invalid or no Port Specified (Must be integer) Check value listed in config/config.cfg"
 
