@@ -76,7 +76,7 @@ def load_prefs(user, pswd, house):
 					if char in ["+","-","x"]:
 						scheds+=char
 						x += 1
-					if char == "&":
+					if char == "&" or char == "?":
 						scheds+=" "
 						x += 1
 					if x == 24:
@@ -99,3 +99,6 @@ def load_prefs(user, pswd, house):
 		return exc_type, exc_value, exc_traceback
 
 	return "<font color=#00FF00>Sync Successful</font>"
+
+if __name__ == "__main__":
+	print (load_prefs(sys.argv[1], sys.argv[2],sys.argv[3]))
