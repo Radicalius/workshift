@@ -133,14 +133,13 @@ class Person(object):
 		# load raw data from file contents
 		self.name = cont[0].strip()
 		self.hours = int(cont[1].strip())
-		self.sched = ("\n".join(cont[2:9]))
+		self.sched = cont[2:9]
 		self.pref = cont[9:]
 
 		# parse schedule data
-		days = self.sched.split("\n")
-		for d,i in zip(day_desc, days):    # d is M|T|W|Th|F|S|Su and i is data for that day
-			hour = 8                       # start at 8 am
-			for j in i:                    # foreach hour of data
+		for d,i in zip(day_desc, self.sched):    # d is M|T|W|Th|F|S|Su and i is data for that day
+			hour = 8                             # start at 8 am
+			for j in i:                          # foreach hour of data
 				self.sched_nums[(d,hour)] = pref_mult[j]
 				hour+=1
 
@@ -360,7 +359,7 @@ while active and count < timeout:
 					pref = person.pref_list.pop()
 					while ((pref == person.locked or pref not in unassigned
 							or pref in person.shifts or not person.available(pref.day,pref.time)) 
-					 		and person.pref_list):       												# go down pref list until available shift arises
+							and person.pref_list):       												# go down pref list until available shift arises
 						pref = person.pref_list.pop()													# grab next shift in pref list
 					if (person.pref_list):
 						person.add_shift(pref)                                                        
@@ -384,11 +383,11 @@ while active and count < timeout:
 for person in people:
 		person.find_combos()
 
-print "STAGE 1 COMPLETE"
-print "Assignment Time Errors:", check_hours(people)
-print "Scheduling Errors:", check_zeros(people)
-print "Average Optimality:", avg_optimality(people)
-print "--------------------------------------------------"
+print("STAGE 1 COMPLETE")
+print("Assignment Time Errors:", check_hours(people))
+print("Scheduling Errors:", check_zeros(people))
+print("Average Optimality:", avg_optimality(people))
+print("--------------------------------------------------")
 
 # STAGE 2 #
 # Search for a local maximum by trading shifts
@@ -426,18 +425,18 @@ for personA in people:
 									if i in personB.shifts:
 										safe = False
 								if safe:
- 									personA.rm_combo(combA, hours/100.)
+									personA.rm_combo(combA, hours/100.)
 									personB.add_combo(combA, hours/100.)
 									personB.rm_combo(combB, hours/100.)
 									personA.add_combo(combB, hours/100.)
 									personA.find_combos()
 									personB.find_combos()
 								
-print "STAGE 2 COMPLETE"
-print "Assignment Time Errors:", check_hours(people)
-print "Scheduling Errors:", check_zeros(people)
-print "Average Optimality:", avg_optimality(people)
-print "--------------------------------------------------"
+print("STAGE 2 COMPLETE")
+print("Assignment Time Errors:", check_hours(people))
+print("Scheduling Errors:", check_zeros(people))
+print("Average Optimality:", avg_optimality(people))
+print("--------------------------------------------------")
 
 # Stage 3 #
 # Trade for shifts still in the unassigned pool
@@ -453,11 +452,11 @@ for person in people:
 						if other in unassigned and shift in person.shifts:
 							swap(person.shifts, shift, unassigned, other)
 
-print "STAGE 3 COMPLETE"
-print "Assignment Time Errors:", check_hours(people)
-print "Scheduling Errors:", check_zeros(people)
-print "Average Optimality:", avg_optimality(people)
-print "--------------------------------------------------"
+print("STAGE 3 COMPLETE")
+print("Assignment Time Errors:", check_hours(people))
+print("Scheduling Errors:", check_zeros(people))
+print("Average Optimality:", avg_optimality(people))
+print("--------------------------------------------------")
 
 # Stage 4 #
 # Fix all scheduling errors
@@ -466,7 +465,7 @@ for num, personA in enumerate(people):
 	for shiftA in personA.shifts:
 		while personA.shift_pref(shiftA) == 0 and personA.pref_list:
 			rankings = {personB:personB.shift_pref(shiftA) for personB in people}
-			rank = rankings.keys()
+			rank = list(rankings.keys())
 			rank.sort(key=lambda x: rankings[x])
 			while rank:
 				personB = rank.pop()
@@ -480,20 +479,20 @@ for num, personA in enumerate(people):
 				if next_choice.hours == personA.hours:
 					shiftA = next_choice
 
-print "STAGE 4 complete"
-print "People with shift schedule conflicts:", check_zeros(people)
-print "People with incorrect number of hours:", check_hours(people)
-print "Optimality: ", avg_optimality(people)
+print("STAGE 4 complete")
+print("People with shift schedule conflicts:", check_zeros(people))
+print("People with incorrect number of hours:", check_hours(people))
+print("Optimality: ", avg_optimality(people))
 
 # Print Error Report
 
 if check_zeros(people) > 0 or check_hours(people) > 0:
-	print "--------------------------------------------------"
-	print "ERRORS:"
+	print("--------------------------------------------------")
+	print("ERRORS:")
 	for p in people:
 		for ws in p.shifts:
 			if p.shift_pref(ws) == 0:
-				print "Scheduling Error: {0} {1} {2}".format(p.name, ws.type, ws.time)
+				print("Scheduling Error: {0} {1} {2}".format(p.name, ws.type, ws.time))
 
 # Write master log (for debugging purposes)
 

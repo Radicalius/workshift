@@ -8,3 +8,5 @@ commit: clean
 	git add *
 	git commit
 	git push origin master
+build: commit
+	git push heroku master

@@ -13,6 +13,7 @@
 import BaseHTTPServer,sys, urllib, os,ssl
 from BaseHTTPServer import *
 from subprocess import Popen, PIPE
+from load_prefs import load_prefs
 
 # Holds values from config file
 config = {}
@@ -104,9 +105,8 @@ class SortingHatRequestHandler(BaseHTTPRequestHandler):
 				house = args[2].split("=")[1]
 
 				# run load_prefs script
-				process = Popen([config["PYTHON"], "load_prefs.py", urllib.unquote(user), urllib.unquote(pswd), urllib.unquote(house)], stdout=PIPE, stderr=PIPE)
-				output, error = process.communicate()
-				print error
+				output = load_prefs(urllib.unquote(user), urllib.unquote(pswd), urllib.unquote(house))
+				print (output)
 				self.wfile.write(output)
 
 			else:
