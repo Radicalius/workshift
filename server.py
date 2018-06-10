@@ -88,7 +88,6 @@ class SortingHatRequestHandler(BaseHTTPRequestHandler):
 
 				# run load_prefs script
 				output = load_prefs(urllib.unquote(user), urllib.unquote(pswd), urllib.unquote(house))
-				print (output)
 				self.wfile.write(output)
 
 			else:
@@ -111,7 +110,6 @@ class SortingHatRequestHandler(BaseHTTPRequestHandler):
 
 			# gather argument keys and values
 			content_len = int(self.headers.getheader('Content-length', 0))
-			print (content_len)
 			post_body = self.rfile.read(content_len)                            
 			args = dict([arg.split("=") for arg in post_body.split("&")])    # key value pairs of query string
 
