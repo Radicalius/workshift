@@ -77,24 +77,6 @@ class SortingHatRequestHandler(BaseHTTPRequestHandler):
 				self.send_page(config["DATA"] + os.sep + "log.html")
 
 
-			elif self.path.startswith("/query"):   # job request
-
-				# gather argument keys and values
-				query_string = self.path.split("?")[1]                              # remove /query?
-				args = dict([arg.split("=") for arg in query_string.split("&")])    # key value pairs of query string
-
-				people = open(config["DATA"] + os.sep + "people.txt","w")
-				people.write(urllib.unquote(args["people"]))
-				people.close()
-
-				shifts = open(config["DATA"] + os.sep + "shifts.csv","w")
-				shifts.write(urllib.unquote(args["shifts"]))
-				shifts.close()
-
-				inp,output,error = os.popen3(config["PYTHON"] + " algo2.py "+args["gtf"]+" "+args["btf"]) # connect and read the output from the algorithym
-				output = "<br/>"+(output.read()+error.read()).replace("\n","<br/>")
-				self.wfile.write(output)                                            # then send to client
-
 			elif self.path.startswith("/sync"):                                     # user is requesting to grab preferences from bsc.coop
 
 				# extract user and pass
@@ -123,6 +105,32 @@ class SortingHatRequestHandler(BaseHTTPRequestHandler):
 
 			# send a human readable error message
 			self.wfile.write("<h1>Error 404: Page Not Found</h1><hr/>Check to make sure the URL is valid and try again.")
+
+	def do_POST(self):
+		if self.path.startswith("/query"):   # job request
+
+			# gather argument keys and values
+			content_len = int(self.headers.getheader('Content-length', 0))
+			print (content_len)
+			post_body = self.rfile.read(content_len)                            
+			args = dict([arg.split("=") for arg in post_body.split("&")])    # key value pairs of query string
+
+			people = open(config["DATA"] + os.sep + "people.txt","w")
+			people.write(urllib.unquote(args["people"]))
+			people.close()
+
+			shifts = open(config["DATA"] + os.sep + "shifts.csv","w")
+			shifts.write(urllib.unquote(args["shifts"]))
+			shifts.close()
+
+			inp,output,error = os.popen3(config["PYTHON"] + " algo2.py "+args["gtf"]+" "+args["btf"]) # connect and read the output from the algorithym
+			output = "<br/>"+(output.read()+error.read()).replace("\n","<br/>")
+
+			self.send_response(200)
+			self.send_header('Content-type', 'text/html')
+			self.end_headers()
+			self.wfile.write(output)                                            # then send to client
+
 
 	def send_page(self,file):
 		# send the HTML code contained in file to the client's browser 

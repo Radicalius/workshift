@@ -183,6 +183,20 @@ function httpGetAsync(theUrl, callback)
     xmlHttp.send(null);
 }
 
+// also from stack overflow :) (https://stackoverflow.com/questions/18169933/submit-form-without-reloading-page)
+function httpPostAsync(theUrl, theParams, callback)
+{
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.onreadystatechange = function() { 
+        if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+            callback(xmlHttp.responseText);
+    }
+    xmlHttp.open("POST", theUrl, true); // true for asynchronous 
+    xmlHttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+    xmlHttp.setRequestHeader("Content-length",theParams.length);
+    xmlHttp.send(theParams);
+}
+
 // queue a job on the server
 function GO(){
 	updateValues();
@@ -202,13 +216,13 @@ function GO(){
 		peoplefile+="[END]\n";
 	}
 	
-	var url = window.location + "query?";
-	url += "btf="+btfact.value+"&";
-	url += "gtf="+gtfact.value+"&";
-	url += "shifts="+encodeURIComponent(shiftfile)+"&";
-	url += "people="+encodeURIComponent(peoplefile);
+	var params = "";
+	params += "btf="+btfact.value+"&";
+	params += "gtf="+gtfact.value+"&";
+	params += "shifts="+encodeURIComponent(shiftfile)+"&";
+	params += "people="+encodeURIComponent(peoplefile);
 	log.innerHTML = "Starting Job"
-	httpGetAsync(url, function(result){
+	httpPostAsync(window.location+"query", params, function(result){
 		log.innerHTML += result;
 		loadResults();
 	});
