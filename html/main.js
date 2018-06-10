@@ -27,7 +27,7 @@ window.onload = function(){
 
 // generates tables for people and shift data
 function createForms(){
-	var html = "<table style='width:50%'><tr><b><td>Type</td><td>Day(s)</td><td>Start Time</td><td>End Time</td><td>Hours</td><td>Number of People</td><td>Category</td></b></tr>";
+	var html = "<table class=hiddentable style='width:50%'><tr><b><td>Type</td><td>Day(s)</td><td>Start Time</td><td>End Time</td><td>Hours</td><td>Number of People</td><td>Category</td></b></tr>";
 	for (var i = 0; i < shifts.length; i++){
 		html += "<tr>"
 		for (var j = 0; j < 7; j++){
@@ -40,7 +40,7 @@ function createForms(){
 	html += "</table>";
 	shifts_.innerHTML = html;
 
-	html = "<table style='width:50%'><tr><b><td>Name</td><td>Assigned Hours</td><td>Preferences</td><td>Schedule</td></b></tr>";
+	html = "<table class=hiddentable style='width:50%'><tr><b><td>Name</td><td>Assigned Hours</td><td>Preferences</td><td>Schedule</td></b></tr>";
 	for (var i = 0; i < people.length; i++){
 		html+="<tr>"
 		for (var j = 0; j < 2; j++){

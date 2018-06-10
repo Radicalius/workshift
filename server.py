@@ -44,11 +44,14 @@ class SortingHatRequestHandler(BaseHTTPRequestHandler):
 		# self.path is the relative url requested
 
 		# check to see that the requested url is valid
-		if self.path in ["/", "/main.js","/res.csv","/shifts.csv","/people.txt","/log.html"] or self.path.startswith("/query") or self.path.startswith("/sync"):
+		if self.path in ["/", "/main.js","/res.csv","/shifts.csv","/people.txt","/log.html", "/main.css"] or self.path.startswith("/query") or self.path.startswith("/sync"):
 
 			# Inform the client that the request was successful and we are sending HTML
 			self.send_response(200)
-			self.send_header('Content-type', 'text/html')
+			if self.path == "/main.css":
+				self.send_header("Content-type", 'text/css')
+			else:
+				self.send_header('Content-type', 'text/html')
 			self.end_headers()
 
 			if self.path == "/":

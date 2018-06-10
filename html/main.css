@@ -1,0 +1,59 @@
+body {
+	font-family:courier;
+	color: #777777;
+	background-color:#000000;
+}
+
+hr {
+	height:1px;border-width:0;color:#777777;background-color:#777777
+}
+
+h1, h2, h3 {
+	color: #999999;
+}
+
+input[type=text], input[type=password], select{
+	border: none;
+	border-bottom: 1px #777777 solid;
+	background-color:black;
+	color: #777777;
+}
+
+button, label {
+	font-family: sans-serif;
+	font-size: 12px;
+	padding: 5px 5px 5px 5px;
+	color: #999999;
+	border: 1px #777777 solid;
+	background-color: #000000;
+}
+
+table {
+	border-collapse: collapse;
+	border: 1px #777777 solid;
+}
+
+.hiddentable {
+	border-width: 0px;
+}
+
+input[type=file]{
+	visibility: hidden;
+}
+
+button:hover, label:hover {
+	border: 1px #00FF00 solid;
+	background-color:black;
+	color: #00FF00;
+}
+
+textarea {
+	background-color: #000000;
+	border: 1px #777777 solid;
+	color:#777777;
+	overflow:hidden;
+}
+
+a {
+	color:#00ff00;
+}

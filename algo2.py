@@ -499,9 +499,9 @@ if check_zeros(people) > 0 or check_hours(people) > 0:
 f = open(data_path + os.sep + "log.html","w")
 shift_types = {w.type for w in shifts}
 f.write("<h1>Master Log</h1>")
-f.write("<table border=1><tr><td>Shift</td><td>Monday</td><td>Tuesday</td><td>Wednesday</td><td>Thursday</td><td>Friday</td><td>Saturday</td><td>Sunday</tr>")
+f.write("<table border=1><tr><td><b>Shift</b></td><td><b>Monday</b></td><td><b>Tuesday</b></td><td><b>Wednesday</b></td><td><b>Thursday</b></td><td><b>Friday</b></td><td><b>Saturday</b></td><td><b>Sunday</b></tr>")
 for w in shift_types:
-	f.write("<tr><td>"+w+"</td>")
+	f.write("<tr><td><b>"+w+"</b></td>")
 	assigned = ["<td>"]*7
 	for person in people:
 		for shift in person.shifts:
